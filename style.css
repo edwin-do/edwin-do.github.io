@@ -3,8 +3,21 @@ body{
     color: aliceblue;
 }
 
-h1{
-    color: aliceblue;
+#doc{
+    height: 500px;
+    width: 1000px;
+    background-image: url("img/bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: soft-light;
+}
+
+.jumbotron{
+    background-color: #0F000F;
+    border-top: 0px;
+    border-bottom: 0px;
+    padding-top: 7%;
+    padding-bottom: 7%;
 }
 
 .bd-placeholder-img {
