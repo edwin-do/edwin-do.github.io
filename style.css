@@ -3,13 +3,13 @@ body{
     color: aliceblue;
 }
 
-#doc{
-    height: 500px;
-    width: 1000px;
-    background-image: url("img/bg.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-blend-mode: soft-light;
+.nav-custom{
+    background-color: whitesmoke;
+    color: #0F000F;
+}
+
+.navbar a{
+    color: #0F000F;
 }
 
 .jumbotron{
@@ -23,4 +23,8 @@ body{
 .bd-placeholder-img {
   font-size: 1.125rem;
   text-anchor: middle;
+}
+
+.carousel-caption d-none d-md-block {
+    background-color: #0F000F;
 }
