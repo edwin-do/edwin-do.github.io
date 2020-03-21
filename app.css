@@ -1,0 +1,112 @@
+body {
+    background: #0A0A0A;
+    /* font-family: "Baloo Chettan 2", cursive; */
+    font-family: 'Raleway', sans-serif;
+}
+
+.sect h2 {
+   color: lightblue;
+   font-weight: 100;
+   font-size: 2.5rem;
+}
+
+.sect p {
+    color: blanchedalmond;
+    font-weight: 100;
+    font-size: 1.125rem;
+    line-height: 2;
+}
+
+.content {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+#nav-main {
+    font-size: 1.5rem;
+    font-weight: 100;    
+}
+
+#nav-main .nav-link {
+    color: white;
+}
+
+#nav-main .nav-link:hover {
+    color: lightskyblue;
+}
+
+#nav-main .navbar-brand {
+    color: lightblue;
+    font-size: 1.5rem;
+}
+
+
+/* used in intro */
+/* #headingGroup span {
+    color: rgb(196, 212, 46);
+    /* font-family: 'Orbitron', sans-serif; */
+/* } */
+
+#headingGroup h1 {
+    font-weight: 100;
+    font-size: 1.0rem;
+}
+
+#headingGroup .intro{
+    color: rgb(204, 245, 241);
+    font-family: 'Space Mono', monospace;
+    font-size: 2.0rem;
+}
+/* #intro-div{
+    padding-left: 2em;
+} */
+
+
+.navbar.scrolled {
+    background: rgb(1, 21, 41);
+    transition: background 500ms;
+}
+
+.jumbotron{
+    background: none;
+}
+
+.jumbotron h1{
+    color: aliceblue;
+    font-size: 3em;
+}
+
+ #intro-lg{
+     padding-top: 15%;
+     padding-bottom: 15%;
+     padding-left: 40%;
+     padding-right: 25%;
+ }
+
+ #intro-md{
+    padding-top: 15%;
+    padding-bottom: 15%;
+    padding-left: 30%;
+    padding-right: 15%;
+}
+
+ #intro-sm{
+    padding-top: 15%;
+    padding-bottom: 15%;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+@media (max-width: 1200px) {
+    #headingGroup h1 {
+        font-weight: 100;
+        font-size: 3rem;
+    }
+    .sect h2 {
+        font-size: 2rem;
+    }
+}
+
+
+
+

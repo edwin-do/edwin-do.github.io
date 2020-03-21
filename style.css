@@ -24,7 +24,3 @@ body{
   font-size: 1.125rem;
   text-anchor: middle;
 }
-
-.carousel-caption d-none d-md-block {
-    background-color: #0F000F;
-}
