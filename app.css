@@ -4,9 +4,29 @@ body {
 }
 
 .sect h2 {
-   color: lightblue;
    font-weight: 100;
    font-size: 2.5rem;
+   padding-top: 5%;
+}
+
+#edu{
+    text-align: left;
+    color: rgb(116, 205, 240);
+}
+
+#learn{
+    text-align: center;
+    color: rgb(236, 222, 139);
+}
+
+#music{
+    text-align: right;
+    color: rgb(238, 116, 111); 
+}
+
+#food{
+    text-align: center;
+    color: rgb(116, 205, 240);
 }
 
 .sect p {
@@ -14,6 +34,12 @@ body {
     font-weight: 100;
     font-size: 1.125rem;
     line-height: 2;
+}
+
+.sect img{
+    padding-right: 5%;
+    padding-left: 5%;
+    /* padding-bottom: 8px; */
 }
 
 .content {
@@ -55,6 +81,7 @@ body {
     font-size: 3em;
 }
 
+/* animation */
  #intro-lg{
      padding-top: 10%;
      padding-bottom: 15%;
@@ -251,4 +278,3 @@ body {
                 -o-transform: none;
                         transform: none;
     }
-

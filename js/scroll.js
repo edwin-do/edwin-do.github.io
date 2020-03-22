@@ -1,5 +1,5 @@
 // init controller
-var controller = new ScrollMagic.Controller();
+var controller = new ScrollMagic.Controller({globalSceneOptions: {triggerHook: "onEnter", duration: "200%"}});
 
 //edu
     new ScrollMagic.Scene({
