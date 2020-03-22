@@ -1,30 +1,78 @@
 // init controller
 var controller = new ScrollMagic.Controller();
 
-var intro = new ScrollMagic.Scene({
-    duration: 1000, // the scene should last for a scroll distance of 100px
-    triggerElement: "#top",
-    offset: 300 // start this scene after scrolling for 50px
-})
+//edu
+    new ScrollMagic.Scene({
+        triggerElement: "#trigger-edu-img",
+        triggerHook: 1.0, 
+        duration: "140%", 
+        offset: 60 
+    })
+    .setClassToggle("#reveal-edu-img", "visible") 
+    .addTo(controller);
 
-.setPin('#top') // pins the element for the the scene's duration
-.addTo(controller); // assign the scene to the controller
+    new ScrollMagic.Scene({
+        triggerElement: "#trigger-edu-txt",
+        triggerHook: 1.0,
+        duration: "120%", 
+        offset: 10 
+    })
+    .setClassToggle("#reveal-edu-txt", "visible")
+    .addTo(controller);
 
-// create a scene
-var edu = new ScrollMagic.Scene({
-    duration: 500, // the scene should last for a scroll distance of 100px
-    triggerElement: "#edu",
-    offset: 250 // start this scene after scrolling for 50px
-})
+//learn
+    new ScrollMagic.Scene({
+        triggerElement: "#trigger-learn-img",
+        triggerHook: 1.0,
+        duration: "140%",
+        offset: 60
+    })
+    .setClassToggle("#reveal-learn-img", "visible")
+    .addTo(controller);
 
-.setPin('#edu') // pins the element for the the scene's duration
-.addTo(controller); // assign the scene to the controller
+    new ScrollMagic.Scene({
+        triggerElement: "#trigger-learn-txt",
+        triggerHook: 1.0,
+        duration: "120%",
+        offset: 10
+    })
+    .setClassToggle("#reveal-learn-txt", "visible")
+    .addTo(controller);
 
-var learning = new ScrollMagic.Scene({
-    duration: 500, // the scene should last for a scroll distance of 100px
-    triggerElement: "#learn",
-    offset: 250 // start this scene after scrolling for 50px
-})
+//Music
+    new ScrollMagic.Scene({
+        triggerElement: "#trigger-music-img",
+        triggerHook: 1.0,
+        duration: "140%",
+        offset: 60
+    })
+    .setClassToggle("#reveal-music-img", "visible")
+    .addTo(controller);
 
-.setPin('#learn') // pins the element for the the scene's duration
-.addTo(controller); // assign the scene to the controller
+    new ScrollMagic.Scene({
+        triggerElement: "#trigger-music-txt",
+        triggerHook: 1.0,
+        duration: "120%",
+        offset: 10
+    })
+    .setClassToggle("#reveal-music-txt", "visible")
+    .addTo(controller);
+
+//Food
+    new ScrollMagic.Scene({
+        triggerElement: "#trigger-food-img",
+        triggerHook: 1.0,
+        duration: "140%",
+        offset: 60
+    })
+    .setClassToggle("#reveal-food-img", "visible")
+    .addTo(controller);
+
+    new ScrollMagic.Scene({
+        triggerElement: "#trigger-food-txt",
+        triggerHook: 1.0,
+        duration: "120%",
+        offset: 10
+    })
+    .setClassToggle("#reveal-food-txt", "visible")
+    .addTo(controller);

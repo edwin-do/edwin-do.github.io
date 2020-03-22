@@ -46,7 +46,7 @@
             <div class="d-none d-lg-block mt-5" id="intro-lg">
                 <div class="row align-items-center text-center jumbotron">
                     <!-- <div id="headingGroup" class="text-white text-center d-none d-lg-block mt-5"></div> -->
-                        <h1>i&nbsp</h1><h1 class="typewrite" data-period="2000" data-type='[ "learn.", "design.", "develop.", "fail.", "try again."]'>
+                        <h1>i&nbsp</h1><h1 class="typewrite" data-period="2000" data-type='[ "learn.", "design.", "develop.", "create.", "am edwin."]'>
                             <span class="wrap"></span>
                         </h1>
                 </div>
@@ -55,7 +55,7 @@
             <div class="d-none d-md-block d-lg-none mt-5" id="intro-md">
                 <div class="row align-items-center text-center jumbotron">
                     <!-- <div id="headingGroup" class="text-white text-center d-none d-lg-block mt-5"></div> -->
-                        <h1>I&nbsp</h1><h1 class="typewrite" data-period="2000" data-type='[ "learn.", "design.", "develop.", "fail.", "try again."]'>
+                        <h1>I&nbsp</h1><h1 class="typewrite" data-period="2000" data-type='[ "learn.", "design.", "develop.", "create.", "am edwin."]'>
                             <span class="wrap"></span>
                         </h1>
                 </div>
@@ -64,7 +64,7 @@
             <div class="d-xs-block d-md-none mt-5" id="intro-sm">
                 <div class="row align-items-center text-center jumbotron">
                     <!-- <div id="headingGroup" class="text-white text-center d-none d-lg-block mt-5"></div> -->
-                        <h1>I&nbsp</h1><h1 class="typewrite" data-period="2000" data-type='[ "learn.", "design.", "develop.", "fail.", "try again."]'>
+                        <h1>I&nbsp</h1><h1 class="typewrite" data-period="2000" data-type='[ "learn.", "design.", "develop.", "create.", "am edwin."]'>
                             <span class="wrap"></span>
                         </h1>
                 </div>
@@ -72,13 +72,16 @@
         </div>
     </section>
 
-    <!-- content -->
+    <!-- content begins -->
     <section class="container-fluid px-0">
+        <!-- edu -->
         <div class="row align-items-center content" id="edu">
-            <div class="col-md-6 order-2 order-md-1">
-                <img src="imgs/mcmaster.jpg" alt="" class="img-fluid">
+            <div id="trigger-edu-img"></div>
+            <div class="col-md-6 order-2 order-md-1" id="reveal-edu-img" >
+                <img src="imgs/mcmaster.jpg" alt="" class="img-fluid rounded-circle">
             </div>
-            <div class="col-md-6 text-center order-1 order-md-2">
+            <div id="trigger-edu-txt"></div>
+            <div class="col-md-6 text-center order-1 order-md-2" id="reveal-edu-txt">
                 <div class="row justify-content-center">
                     <div class="col-10 col-lg-8 sect mb-5 mb-md-0">
                         <h2>education</h2>
@@ -95,8 +98,10 @@
                 </div>
             </div>
         </div>
+        <!-- learn -->
         <div class="row align-items-center content" id="learn">
-            <div class="col-md-6 text-center">
+            <div id="trigger-learn-txt"></div>
+            <div class="col-md-6 text-center" id="reveal-learn-txt">
                 <div class="row justify-content-center">
                     <div class="col-10 col-lg-8 sect mb-5 mb-md-0">
                         <h2>learning</h2>
@@ -112,15 +117,19 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6">
-                <img src="imgs/workflow.jpg" alt="" class="img-fluid">
+            <div id="trigger-learn-img"></div>
+            <div class="col-md-6" id="reveal-learn-img">
+                <img src="imgs/workflow.jpg" alt="" class="img-fluid rounded">
             </div>
         </div>
+        <!-- music -->
         <div class="row align-items-center content">
-            <div class="col-md-6 order-2 order-md-1">
-                <img src="imgs/music.jpg" alt="" class="img-fluid">
+            <div id="trigger-music-img"></div>
+            <div class="col-md-6 order-2 order-md-1" id="reveal-music-img">
+                <img src="imgs/music.jpg" alt="" class="img-fluid rounded">
             </div>
-            <div class="col-md-6 text-center order-1 order-md-2">
+            <div id="trigger-music-txt"></div>
+            <div class="col-md-6 text-center order-1 order-md-2" id="reveal-music-txt">
                 <div class="row justify-content-center">
                     <div class="col-10 col-lg-8 sect mb-5 mb-md-0">
                         <h2>Music</h2>
@@ -140,8 +149,10 @@
                 </div>
             </div>
         </div>
+        <!-- food -->
         <div class="row align-items-center content">
-            <div class="col-md-6 text-center">
+            <div id="trigger-food-txt"></div>
+            <div class="col-md-6 text-center" id="reveal-food-txt">
                 <div class="row justify-content-center">
                     <div class="col-10 col-lg-8 sect mb-5 mb-md-0">
                         <h2>Food</h2>
@@ -157,8 +168,9 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6">
-                <img src="imgs/food.jpg" alt="" class="img-fluid">
+            <div id="trigger-food-img"></div>
+            <div class="col-md-6" id="reveal-food-img">
+                <img src="imgs/food.jpg" alt="" class="img-fluid rounded-circle">
             </div>
         </div>
     </section>

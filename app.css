@@ -1,6 +1,5 @@
 body {
     background: #0A0A0A;
-    /* font-family: "Baloo Chettan 2", cursive; */
     font-family: 'Raleway', sans-serif;
 }
 
@@ -20,6 +19,8 @@ body {
 .content {
     margin-top: 100px;
     margin-bottom: 100px;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 #nav-main {
@@ -40,28 +41,6 @@ body {
     font-size: 1.5rem;
 }
 
-
-/* used in intro */
-/* #headingGroup span {
-    color: rgb(196, 212, 46);
-    /* font-family: 'Orbitron', sans-serif; */
-/* } */
-
-#headingGroup h1 {
-    font-weight: 100;
-    font-size: 1.0rem;
-}
-
-#headingGroup .intro{
-    color: rgb(204, 245, 241);
-    font-family: 'Space Mono', monospace;
-    font-size: 2.0rem;
-}
-/* #intro-div{
-    padding-left: 2em;
-} */
-
-
 .navbar.scrolled {
     background: rgb(1, 21, 41);
     transition: background 500ms;
@@ -77,36 +56,199 @@ body {
 }
 
  #intro-lg{
-     padding-top: 15%;
+     padding-top: 10%;
      padding-bottom: 15%;
      padding-left: 40%;
      padding-right: 25%;
  }
 
  #intro-md{
-    padding-top: 15%;
+    padding-top: 10%;
     padding-bottom: 15%;
     padding-left: 30%;
     padding-right: 15%;
 }
 
  #intro-sm{
-    padding-top: 15%;
+    padding-top: 25%;
     padding-bottom: 15%;
     padding-left: 20%;
     padding-right: 20%;
 }
 
-@media (max-width: 1200px) {
-    #headingGroup h1 {
-        font-weight: 100;
-        font-size: 3rem;
+/* education section */
+    #reveal-edu-img {
+        opacity: 0;
+        -webkit-transform: scale(0.8);
+            -moz-transform: scale(0.9);
+                -ms-transform: scale(0.9);
+                -o-transform: scale(0.9);
+                        transform: scale(0.9);
+        -webkit-transition: all 1s ease-in-out;
+            -moz-transition: all 1s ease-in-out;
+                -ms-transition: all 1s ease-in-out;
+                -o-transition: all 1s ease-in-out;
+                        transition: all 1s ease-in-out;
     }
-    .sect h2 {
-        font-size: 2rem;
+    #reveal-edu-img.visible {
+        opacity: 1;
+        -webkit-transform: none;
+            -moz-transform: none;
+                -ms-transform: none;
+                -o-transform: none;
+                        transform: none;
     }
-}
+    #reveal-edu-txt {
+        opacity: 0;
+        -webkit-transform: scale(0.8);
+            -moz-transform: scale(0.9);
+                -ms-transform: scale(0.9);
+                -o-transform: scale(0.9);
+                        transform: scale(0.9);
+        -webkit-transition: all 1s ease-in-out;
+            -moz-transition: all 1s ease-in-out;
+                -ms-transition: all 1s ease-in-out;
+                -o-transition: all 1s ease-in-out;
+                        transition: all 1s ease-in-out;
+    }
+    #reveal-edu-txt.visible {
+        opacity: 1;
+        -webkit-transform: none;
+            -moz-transform: none;
+                -ms-transform: none;
+                -o-transform: none;
+                        transform: none;
+    }
 
+/* learn section */
+    #reveal-learn-img {
+        opacity: 0;
+        -webkit-transform: scale(0.8);
+            -moz-transform: scale(0.9);
+                -ms-transform: scale(0.9);
+                -o-transform: scale(0.9);
+                        transform: scale(0.9);
+        -webkit-transition: all 1s ease-in-out;
+            -moz-transition: all 1s ease-in-out;
+                -ms-transition: all 1s ease-in-out;
+                -o-transition: all 1s ease-in-out;
+                        transition: all 1s ease-in-out;
+    }
+    #reveal-learn-img.visible {
+        opacity: 1;
+        -webkit-transform: none;
+            -moz-transform: none;
+                -ms-transform: none;
+                -o-transform: none;
+                        transform: none;
+    }
+    #reveal-learn-txt {
+        opacity: 0;
+        -webkit-transform: scale(0.8);
+            -moz-transform: scale(0.9);
+                -ms-transform: scale(0.9);
+                -o-transform: scale(0.9);
+                        transform: scale(0.9);
+        -webkit-transition: all 1s ease-in-out;
+            -moz-transition: all 1s ease-in-out;
+                -ms-transition: all 1s ease-in-out;
+                -o-transition: all 1s ease-in-out;
+                        transition: all 1s ease-in-out;
+    }
+    #reveal-learn-txt.visible {
+        opacity: 1;
+        -webkit-transform: none;
+            -moz-transform: none;
+                -ms-transform: none;
+                -o-transform: none;
+                        transform: none;
+    }
 
+/* music section */
+    #reveal-music-img {
+        opacity: 0;
+        -webkit-transform: scale(0.8);
+            -moz-transform: scale(0.9);
+                -ms-transform: scale(0.9);
+                -o-transform: scale(0.9);
+                        transform: scale(0.9);
+        -webkit-transition: all 1s ease-in-out;
+            -moz-transition: all 1s ease-in-out;
+                -ms-transition: all 1s ease-in-out;
+                -o-transition: all 1s ease-in-out;
+                        transition: all 1s ease-in-out;
+    }
+    #reveal-music-img.visible {
+        opacity: 1;
+        -webkit-transform: none;
+            -moz-transform: none;
+                -ms-transform: none;
+                -o-transform: none;
+                        transform: none;
+    }
+    #reveal-music-txt {
+        opacity: 0;
+        -webkit-transform: scale(0.8);
+            -moz-transform: scale(0.9);
+                -ms-transform: scale(0.9);
+                -o-transform: scale(0.9);
+                        transform: scale(0.9);
+        -webkit-transition: all 1s ease-in-out;
+            -moz-transition: all 1s ease-in-out;
+                -ms-transition: all 1s ease-in-out;
+                -o-transition: all 1s ease-in-out;
+                        transition: all 1s ease-in-out;
+    }
+    #reveal-music-txt.visible {
+        opacity: 1;
+        -webkit-transform: none;
+            -moz-transform: none;
+                -ms-transform: none;
+                -o-transform: none;
+                        transform: none;
+    }
 
+/* food section */
+    #reveal-food-img {
+        opacity: 0;
+        -webkit-transform: scale(0.8);
+            -moz-transform: scale(0.9);
+                -ms-transform: scale(0.9);
+                -o-transform: scale(0.9);
+                        transform: scale(0.9);
+        -webkit-transition: all 1s ease-in-out;
+            -moz-transition: all 1s ease-in-out;
+                -ms-transition: all 1s ease-in-out;
+                -o-transition: all 1s ease-in-out;
+                        transition: all 1s ease-in-out;
+    }
+    #reveal-food-img.visible {
+        opacity: 1;
+        -webkit-transform: none;
+            -moz-transform: none;
+                -ms-transform: none;
+                -o-transform: none;
+                        transform: none;
+    }
+    #reveal-food-txt {
+        opacity: 0;
+        -webkit-transform: scale(0.8);
+            -moz-transform: scale(0.9);
+                -ms-transform: scale(0.9);
+                -o-transform: scale(0.9);
+                        transform: scale(0.9);
+        -webkit-transition: all 1s ease-in-out;
+            -moz-transition: all 1s ease-in-out;
+                -ms-transition: all 1s ease-in-out;
+                -o-transition: all 1s ease-in-out;
+                        transition: all 1s ease-in-out;
+    }
+    #reveal-food-txt.visible {
+        opacity: 1;
+        -webkit-transform: none;
+            -moz-transform: none;
+                -ms-transform: none;
+                -o-transform: none;
+                        transform: none;
+    }
 
