@@ -54,6 +54,7 @@ body {
 
 #nav-main .nav-link {
     color: white;
+    
 }
 
 #nav-main .nav-link:hover {
@@ -114,6 +115,7 @@ body {
                 -ms-transition: all 1s ease-in-out;
                 -o-transition: all 1s ease-in-out;
                         transition: all 1s ease-in-out;
+        padding-bottom: 5%;
     }
     #reveal-edu-img.visible {
         opacity: 1;
@@ -158,6 +160,7 @@ body {
                 -ms-transition: all 1s ease-in-out;
                 -o-transition: all 1s ease-in-out;
                         transition: all 1s ease-in-out;
+        padding-bottom: 5%;
     }
     #reveal-learn-img.visible {
         opacity: 1;
@@ -202,6 +205,7 @@ body {
                 -ms-transition: all 1s ease-in-out;
                 -o-transition: all 1s ease-in-out;
                         transition: all 1s ease-in-out;
+        padding-bottom: 5%;
     }
     #reveal-music-img.visible {
         opacity: 1;
@@ -246,6 +250,7 @@ body {
                 -ms-transition: all 1s ease-in-out;
                 -o-transition: all 1s ease-in-out;
                         transition: all 1s ease-in-out;
+        padding-bottom: 5%;
     }
     #reveal-food-img.visible {
         opacity: 1;
@@ -275,4 +280,9 @@ body {
                 -ms-transform: none;
                 -o-transform: none;
                         transform: none;
+    }
+
+    ul li{
+        list-style: none;
+        color: lightblue;
     }
