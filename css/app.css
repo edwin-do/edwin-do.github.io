@@ -67,7 +67,7 @@ body {
 }
 
 .navbar.scrolled {
-    background: rgb(1, 21, 41);
+    background: rgba(0, 0, 0,0.85);
     transition: background 500ms;
 }
 
@@ -286,3 +286,4 @@ body {
         list-style: none;
         color: lightblue;
     }
+    
