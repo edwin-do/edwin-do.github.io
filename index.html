@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="icon" href="icons/favicon.ico">
     <link rel="stylesheet" href="css/app.css">
-    <link href="css/dark.css" rel="stylesheet" />
 
     <title>edwin do</title>
 </head>
@@ -41,148 +40,91 @@
     
     <!-- animated intro -->
     <section class="container-fluid">
-        <div id="top">
-            <div class="d-none d-lg-block mt-5" id="intro-lg">
-                <div class="row align-items-center text-center jumbotron">
-                    <!-- <div id="headingGroup" class="text-white text-center d-none d-lg-block mt-5"></div> -->
-                        <h1>i&nbsp</h1><h1 class="typewrite" data-period="2000" data-type='[ "learn.", "design.", "develop.", "create.", "am edwin."]'>
-                            <span class="wrap"></span>
-                        </h1>
-                </div>
+        <div id="intro" class="d-none d-lg-block mt-5">
+            <div id="text-intro" class="row align-items-center text-center jumbotron">
+                    <h1 id="i">i&nbsp</h1>
+                    <h1 class="typewrite" data-period="2000" data-type='[ "learn.", "design.", "develop.", "create.", "am edwin."]'>
+                        <span class="wrap"></span>
+                    </h1>
             </div>
+        </div>
 
-            <div class="d-none d-md-block d-lg-none mt-5" id="intro-md">
-                <div class="row align-items-center text-center jumbotron">
-                    <!-- <div id="headingGroup" class="text-white text-center d-none d-lg-block mt-5"></div> -->
-                        <h1>I&nbsp</h1><h1 class="typewrite" data-period="2000" data-type='[ "learn.", "design.", "develop.", "create.", "am edwin."]'>
-                            <span class="wrap"></span>
-                        </h1>
-                </div>
+        <div class="d-none d-md-block d-lg-none mt-5" >
+            <div id="text-intro" class="row align-items-center text-center jumbotron">
+                    <h1 id="i">i&nbsp</h1>
+                    <h1 class="typewrite" data-period="2000" data-type='[ "learn.", "design.", "develop.", "create.", "am edwin."]'>
+                        <span class="wrap"></span>
+                    </h1>
             </div>
+        </div>
 
-            <div class="d-xs-block d-md-none mt-5" id="intro-sm">
-                <div class="row align-items-center text-center jumbotron">
-                    <!-- <div id="headingGroup" class="text-white text-center d-none d-lg-block mt-5"></div> -->
-                        <h1>I&nbsp</h1><h1 class="typewrite" data-period="2000" data-type='[ "learn.", "design.", "develop.", "create.", "am edwin."]'>
-                            <span class="wrap"></span>
-                        </h1>
-                </div>
+        <div class="d-xs-block d-md-none mt-5">
+            <div id="text-intro" class="row align-items-center text-center jumbotron">
+                    <h1 id="i">i&nbsp</h1><h1 class="typewrite" data-period="2000" data-type='[ "learn.", "design.", "develop.", "create.", "am edwin."]'>
+                        <span class="wrap"></span>
+                    </h1>
             </div>
         </div>
     </section>
 
     <!-- content begins -->
     <section class="container-fluid px-0">
-        <!-- edu -->
-        <div class="row align-items-center content" id="edu">
-            <div id="trigger-edu-img"></div>
-            <div class="col-md-6 order-1 order-lg-2" id="reveal-edu-img" >
-                <img src="img/mcmaster.jpg" alt="" class="img-fluid rounded-circle">
-            </div>
-            <div id="trigger-edu-txt"></div>
-            <div class="col-md-6 text-center order-2 order-lg-1" id="reveal-edu-txt">
-                <div class="row justify-content-center">
-                    <div class="col-10 col-lg-8 sect mb-5 mb-md-0">
-                        <img src="icons/school.png" alt="" class="float-xl-left d-xs-block d-xl-inline">
-                        <h2 id="edu" class="text-xs-left text-xl-left">education</h2>
-                        <p class="lead text-left">I currently study Software Engineering & Management at McMaster University located in Hamilton, Ontario. 
-                                        Courses that I have taken include: 
-                                        <ul class="text-left"> 
-                                            <li> Data structures & algorithms</li>
-                                            <li> Software Design</li>
-                                            <li> Databases</li>
-                                            <li> Concurrent systems</li>
-                                        </ul>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- learn -->
-        <div class="row align-items-center content" id="learn">
-            <div id="trigger-learn-txt"></div>
-            <div class="col-md-6 text-center order-2 order-lg-2" id="reveal-learn-txt">
-                <div class="row justify-content-center">
-                    <div class="col-10 col-lg-8 sect mb-5 mb-md-0">
-                        <h2 id="learn">learning</h2>
-                        <img src="icons/lightbulb.png" alt="" class="d-xs-block d-xl-inline">
-                        <p class="lead">Being curious is what drives me to seek out other opportunities to learn. 
-                            I participate in hackathons, work on side-projects, and enroll in online courses such as Udemy. 
-                            Courses that are completed/in progress:
-                            <ul class="text-left">
-                                <li>Udemy 
-                                    <ul>
-                                        <li>The Web Developer Bootcamp [47hrs] - Completed</li>
-                                        <li>Artificial Intelligence:How to build an AI [16.5hrs] - In progress</li>
-                                    </ul>
-                                </li>
-                                <li>RedHat</li>
-                                    <ul>
-                                        <li>Introduction to Containers,Kubernetes & RedHat OpenShift [61hrs]- In progress</li>
-                                    </ul>
-                            </ul>
+        <!-- row1 -->
+        <div class="container" id="section1">
+            <h1 id="heading">About Me.</h1>
+            <div class="row">
+                <div class="col-6" id="section2">
 
-                            </p>
-                    </div>
+                </div>
+
+                <div class="col-6" id="section3">
+                    <h1>Education</h1>
+                    <p>I currently study Software Engineering & Management at McMaster University located in Hamilton, Ontario. 
+                        Courses that I have taken include:</p>
                 </div>
             </div>
-            <div id="trigger-learn-img"></div>
-            <div class="col-md-6 order-1 order-lg-1" id="reveal-learn-img">
-                <img src="img/workflow.jpg" alt="" class="img-fluid rounded">
-            </div>
-        </div>
-        <!-- music -->
-        <div class="row align-items-center content">
-            <div id="trigger-music-img"></div>
-            <div class="col-md-6 order-1 order-lg-2" id="reveal-music-img">
-                <img src="img/music.jpg" alt="" class="img-fluid rounded">
-            </div>
-            <div id="trigger-music-txt"></div>
-            <div class="col-md-6 text-center order-2 order-lg-1" id="reveal-music-txt">
-                <div class="row justify-content-center">
-                    <div class="col-10 col-lg-8 sect mb-5 mb-md-0">
-                        <img src="icons/music.png" alt="" class="float-xl-right d-xs-block d-xl-inline"> 
-                        <h2 id="music" class="text-xl-right">music</h2>
-                        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, iste molestiae
-                            beatae, maiores
-                            deserunt
-                            in voluptatibus
-                            aspernatur architecto excepturi delectus soluta? Ipsa, deleniti dolorem hic consequatur
-                            repellat eveniet
-                            quidem
-                            voluptate necessitatibus dolorum delectus minus vitae, ut, veritatis sint ipsum magnam
-                            autem nam ex deserunt
-                            debitis
-                            eaque ratione! Nobis, quidem assumenda.</p>
+            <!-- row 2 -->
+            <div class="row">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-6" id="section3">
+
+                        </div>
+
+                        <div class="col-6" id="section2">
+
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <!-- food -->
-        <div class="row align-items-center content">
-            <div id="trigger-food-txt"></div>
-            <div class="col-md-6 text-center order-2" id="reveal-food-txt">
-                <div class="row justify-content-center">
-                    <div class="col-10 col-lg-8 sect mb-5 mb-md-0">
-                        <h2 id="food">food</h2>
-                        <img src="icons/food.png" alt="" class="d-xs-block d-xl-inline">
-                        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, iste molestiae
-                            beatae, maiores deserunt
-                            in voluptatibus
-                            aspernatur architecto excepturi delectus soluta? Ipsa, deleniti dolorem hic consequatur
-                            repellat eveniet quidem
-                            voluptate necessitatibus dolorum delectus minus vitae, ut, veritatis sint ipsum magnam
-                            autem nam ex deserunt debitis
-                            eaque ratione! Nobis, quidem assumenda.</p>
-                    </div>
-                </div>
-            </div>
-            <div id="trigger-food-img"></div>
-            <div class="col-md-6 order-1" id="reveal-food-img">
-                <img src="img/food.jpg" alt="" class="img-fluid rounded">
             </div>
         </div>
     </section>
+
+    <!-- content begins
+    <section class="container-fluid px-0">
+
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./img/food.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./img/music.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./img/food.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+    </section> -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
@@ -195,7 +137,7 @@
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.backstretch.min.js"></script>
-    <script src="js/dark.js"></script>
+    <!-- <script src="js/dark.js"></script> -->
 
     <script>
         $(function () {

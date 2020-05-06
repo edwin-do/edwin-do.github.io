@@ -13,19 +13,11 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="icon" href="icons/favicon.ico">
     <link rel="stylesheet" href="css/app.css">
-    <link href="css/templatemo-diagoona.css" rel="stylesheet" />
 
     <title>edwin do</title>
 </head>
 
 <body>
-
-    <!-- <div class="background">
-        <div class="transbox">
-          <p>This is some text that is placed in the transparent box.</p>
-        </div>
-      </div> -->
-
     <nav id="nav-main" class="navbar navbar-dark navbar-expand-md py-0 fixed-top">
         <!-- <a href="#" class="navbar-brand collapse">edwin</a> -->
         <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks" aria-label="Toggle navigation">
@@ -45,119 +37,171 @@
             </ul>
         </div>
     </nav>
-
-    <div id="top"></div>
     
+    <!-- animated intro -->
+    <!-- <section class="container-fluid">
+        <div id="top">
+            <div class="d-none d-lg-block mt-5" id="intro-lg">
+                <div class="row align-items-center text-center jumbotron">
+                        <h1>i&nbsp</h1><h1 class="typewrite" data-period="2000" data-type='[ "learn.", "design.", "develop.", "create.", "am edwin."]'>
+                            <span class="wrap"></span>
+                        </h1>
+                </div>
+            </div>
+
+            <div class="d-none d-md-block d-lg-none mt-5" id="intro-md">
+                <div class="row align-items-center text-center jumbotron">
+                        <h1>I&nbsp</h1><h1 class="typewrite" data-period="2000" data-type='[ "learn.", "design.", "develop.", "create.", "am edwin."]'>
+                            <span class="wrap"></span>
+                        </h1>
+                </div>
+            </div>
+
+            <div class="d-xs-block d-md-none mt-5" id="intro-sm">
+                <div class="row align-items-center text-center jumbotron">
+                        <h1>I&nbsp</h1><h1 class="typewrite" data-period="2000" data-type='[ "learn.", "design.", "develop.", "create.", "am edwin."]'>
+                            <span class="wrap"></span>
+                        </h1>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <div class="row row-eq-height">
+        <!-- edu -->
+        <div class="col-md-12" id="about-me">
+            <div class="row align-items-center content" >
+                <div id="trigger-edu-img"></div>
+                <div id="trigger-edu-txt"></div>
+                <div class="text-center order-2 order-lg-1" id="reveal-edu-txt">
+                    <div class="row justify-content-center">
+                        <div class="col-10 col-lg-8 sect mb-5 mb-md-0">
+                            <img src="icons/school.png" alt="" class="float-xl-left d-xs-block d-xl-inline">
+                            <h2 id="edu-title" class="text-xs-left text-xl-left">About Me</h2>
+                            <p class="lead text-left">I currently study Software Engineering & Management at McMaster University located in Hamilton, Ontario. 
+                                            Courses that I have taken include: 
+                                            <ul class="text-left"> 
+                                                <li> Data structures & algorithms</li>
+                                                <li> Software Design</li>
+                                                <li> Databases</li>
+                                                <li> Concurrent systems</li>
+                                            </ul>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- content begins -->
     <section class="container-fluid px-0">
-        <!-- edu -->
-        <div class="row align-items-center content" id="edu">
-            <div id="trigger-edu-img"></div>
-            <div class="col-md-6 order-1 order-lg-2" id="reveal-edu-img" >
-                <img src="img/mcmaster.jpg" alt="" class="img-fluid rounded-circle">
-            </div>
-            <div id="trigger-edu-txt"></div>
-            <div class="col-md-6 text-center order-2 order-lg-1" id="reveal-edu-txt">
-                <div class="row justify-content-center">
-                    <div class="col-10 col-lg-8 sect mb-5 mb-md-0">
-                        <img src="icons/school.png" alt="" class="float-xl-left d-xs-block d-xl-inline">
-                        <h2 id="edu" class="text-xs-left text-xl-left">education</h2>
-                        <p class="lead text-left">I currently study Software Engineering & Management at McMaster University located in Hamilton, Ontario. 
-                                        Courses that I have taken include: 
-                                        <ul class="text-left"> 
-                                            <li> Data structures & algorithms</li>
-                                            <li> Software Design</li>
-                                            <li> Databases</li>
-                                            <li> Concurrent systems</li>
-                                        </ul>
-                        </p>
+        <!-- first row  -->
+        <div class="row row-eq-height">
+            <!-- edu -->
+            <div class="col-md-6" id="edu">
+                <div class="row align-items-center content" >
+                    <div id="trigger-edu-img"></div>
+                    <div id="reveal-edu-img" >
+                        <img src="img/mcmaster.jpg" alt="" class="img-fluid rounded-circle">
+                    </div>
+                    <div id="trigger-edu-txt"></div>
+                    <div class="text-center order-2 order-lg-1" id="reveal-edu-txt">
+                        <div class="row justify-content-center">
+                            <div class="col-10 col-lg-8 sect mb-5 mb-md-0">
+                                <img src="icons/school.png" alt="" class="float-xl-left d-xs-block d-xl-inline">
+                                <h2 id="edu-title" class="text-xs-left text-xl-left">education</h2>
+                                <p class="lead text-left">I currently study Software Engineering & Management at McMaster University located in Hamilton, Ontario. 
+                                                Courses that I have taken include: 
+                                                <ul class="text-left"> 
+                                                    <li> Data structures & algorithms</li>
+                                                    <li> Software Design</li>
+                                                    <li> Databases</li>
+                                                    <li> Concurrent systems</li>
+                                                </ul>
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+            <!-- learn -->
+            <div class="col-md-6" id="learn">
+                <div class="row align-items-center content" >
+                    <div id="trigger-learn-txt"></div>
+                    <div class="text-center order-2 order-lg-2" id="reveal-learn-txt">
+                        <div class="row justify-content-center">
+                            <div class="col-10 col-lg-8 sect mb-5 mb-md-0">
+                                <h2 id="learn-title">learning</h2>
+                                <img src="icons/lightbulb.png" alt="" class="d-xs-block d-xl-inline">
+                                <p class="lead">Being curious is what drives me to seek out other opportunities to learn. 
+                                    I participate in hackathons, work on side-projects, and enroll in online courses such as Udemy. 
+                                    </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="trigger-learn-img"></div>
+                    <div class="order-1 order-lg-1" id="reveal-learn-img">
+                        <img src="img/workflow.jpg" alt="" class="img-fluid rounded">
+                    </div>
+                </div>
         </div>
-        <!-- learn -->
-        <div class="row align-items-center content" id="learn">
-            <div id="trigger-learn-txt"></div>
-            <div class="col-md-6 text-center order-2 order-lg-2" id="reveal-learn-txt">
-                <div class="row justify-content-center">
-                    <div class="col-10 col-lg-8 sect mb-5 mb-md-0">
-                        <h2 id="learn">learning</h2>
-                        <img src="icons/lightbulb.png" alt="" class="d-xs-block d-xl-inline">
-                        <p class="lead">Being curious is what drives me to seek out other opportunities to learn. 
-                            I participate in hackathons, work on side-projects, and enroll in online courses such as Udemy. 
-                            Courses that are completed/in progress:
-                            <ul class="text-left">
-                                <li>Udemy 
-                                    <ul>
-                                        <li>The Web Developer Bootcamp [47hrs] - Completed</li>
-                                        <li>Artificial Intelligence:How to build an AI [16.5hrs] - In progress</li>
-                                    </ul>
-                                </li>
-                                <li>RedHat</li>
-                                    <ul>
-                                        <li>Introduction to Containers,Kubernetes & RedHat OpenShift [61hrs]- In progress</li>
-                                    </ul>
-                            </ul>
 
-                            </p>
+        <div class="row row-eq-height">
+            <!-- music -->
+            <div class="col-md-6" id="music">
+                <div class="row align-items-center content">
+                    <div id="trigger-music-img"></div>
+                    <div class="order-1 order-lg-1" id="reveal-music-img">
+                        <img src="img/music.jpg" alt="" class="img-fluid rounded">
+                    </div>
+                    <div id="trigger-music-txt"></div>
+                    <div class="text-center order-2 order-lg-2" id="reveal-music-txt">
+                        <div class="row justify-content-center">
+                            <div class="col-10 col-lg-8 sect mb-5 mb-md-0">
+                                <img src="icons/music.png" alt="" class="float-xl-right d-xs-block d-xl-inline"> 
+                                <h2 id="music" class="text-xl-right">music</h2>
+                                <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, iste molestiae
+                                    beatae, maiores
+                                    deserunt
+                                    in voluptatibus
+                                    aspernatur architecto excepturi delectus soluta? Ipsa, deleniti dolorem hic consequatur
+                                    repellat eveniet
+                                    quidem
+                                    voluptate necessitatibus dolorum delectus minus vitae, ut, veritatis sint ipsum magnam
+                                    autem nam ex deserunt
+                                    debitis
+                                    eaque ratione! Nobis, quidem assumenda.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div id="trigger-learn-img"></div>
-            <div class="col-md-6 order-1 order-lg-1" id="reveal-learn-img">
-                <img src="img/workflow.jpg" alt="" class="img-fluid rounded">
-            </div>
-        </div>
-        <!-- music -->
-        <div class="row align-items-center content">
-            <div id="trigger-music-img"></div>
-            <div class="col-md-6 order-1 order-lg-2" id="reveal-music-img">
-                <img src="img/music.jpg" alt="" class="img-fluid rounded">
-            </div>
-            <div id="trigger-music-txt"></div>
-            <div class="col-md-6 text-center order-2 order-lg-1" id="reveal-music-txt">
-                <div class="row justify-content-center">
-                    <div class="col-10 col-lg-8 sect mb-5 mb-md-0">
-                        <img src="icons/music.png" alt="" class="float-xl-right d-xs-block d-xl-inline"> 
-                        <h2 id="music" class="text-xl-right">music</h2>
-                        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, iste molestiae
-                            beatae, maiores
-                            deserunt
-                            in voluptatibus
-                            aspernatur architecto excepturi delectus soluta? Ipsa, deleniti dolorem hic consequatur
-                            repellat eveniet
-                            quidem
-                            voluptate necessitatibus dolorum delectus minus vitae, ut, veritatis sint ipsum magnam
-                            autem nam ex deserunt
-                            debitis
-                            eaque ratione! Nobis, quidem assumenda.</p>
+            <!-- food -->
+            <div class="col-md-6" id="food">
+                <div class="row align-items-center content">
+                    <div id="trigger-food-txt"></div>
+                    <div class="text-center order-2" id="reveal-food-txt">
+                        <div class="row justify-content-center">
+                            <div class="col-10 col-lg-8 sect mb-5 mb-md-0">
+                                <h2 id="food">food</h2>
+                                <img src="icons/food.png" alt="" class="d-xs-block d-xl-inline">
+                                <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, iste molestiae
+                                    beatae, maiores deserunt
+                                    in voluptatibus
+                                    aspernatur architecto excepturi delectus soluta? Ipsa, deleniti dolorem hic consequatur
+                                    repellat eveniet quidem
+                                    voluptate necessitatibus dolorum delectus minus vitae, ut, veritatis sint ipsum magnam
+                                    autem nam ex deserunt debitis
+                                    eaque ratione! Nobis, quidem assumenda.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="trigger-food-img"></div>
+                    <div class="order-1" id="reveal-food-img">
+                        <img src="img/food.jpg" alt="" class="img-fluid rounded">
                     </div>
                 </div>
-            </div>
-        </div>
-        <!-- food -->
-        <div class="row align-items-center content">
-            <div id="trigger-food-txt"></div>
-            <div class="col-md-6 text-center order-2" id="reveal-food-txt">
-                <div class="row justify-content-center">
-                    <div class="col-10 col-lg-8 sect mb-5 mb-md-0">
-                        <h2 id="food">food</h2>
-                        <img src="icons/food.png" alt="" class="d-xs-block d-xl-inline">
-                        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, iste molestiae
-                            beatae, maiores deserunt
-                            in voluptatibus
-                            aspernatur architecto excepturi delectus soluta? Ipsa, deleniti dolorem hic consequatur
-                            repellat eveniet quidem
-                            voluptate necessitatibus dolorum delectus minus vitae, ut, veritatis sint ipsum magnam
-                            autem nam ex deserunt debitis
-                            eaque ratione! Nobis, quidem assumenda.</p>
-                    </div>
-                </div>
-            </div>
-            <div id="trigger-food-img"></div>
-            <div class="col-md-6 order-1" id="reveal-food-img">
-                <img src="img/food.jpg" alt="" class="img-fluid rounded">
-            </div>
         </div>
     </section>
 
@@ -172,7 +216,7 @@
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.backstretch.min.js"></script>
-    <script src="js/templatemo-script.js"></script>
+    <script src="js/dark.js"></script>
 
     <script>
         $(function () {

@@ -63,6 +63,6 @@ window.onload = function() {
     // INJECT CSS
     var css = document.createElement("style");
     css.type = "text/css";
-    css.innerHTML = ".typewrite > .wrap { border-right: 0.03em solid #000}";
+    css.innerHTML = ".typewrite > .wrap { border-right: 0 solid #000}";
     document.body.appendChild(css);
 };
