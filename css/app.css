@@ -17,7 +17,7 @@ button:focus { outline: none; }
 p { line-height: 1.9; }
 
 #heading{
-    font-size: 5.0em;
+    font-size: 9.0vw;
 }
 
 .section{
@@ -52,6 +52,7 @@ p { line-height: 1.9; }
 
 .text{
     text-align: center;
+    font-size: 1.8vw;
 }
 
 .sect h2 {
@@ -62,12 +63,12 @@ p { line-height: 1.9; }
  
  #i{
      color: black;
-     font-size: 3.5em;
+     font-size: 8vw;
  }
 
 .wrap{
     color: black;
-    font-size: 1.5em;
+    font-size: 8vw;
     font-weight: 700;
 }
 
