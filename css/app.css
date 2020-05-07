@@ -1,8 +1,17 @@
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 0px;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
 body {
     font-family: 'Railway', Arial, sans-serif;
     font-size: 14px;
     font-weight: 300;
-    overflow-x: hidden;
+
     background-color: white;
 }
 
@@ -18,8 +27,8 @@ p { line-height: 1.9; }
 
 #intro{
     text-align: center;
-    padding-top: 22vh;
-    padding-bottom: 10vh;
+    padding-top: 25vh;
+    padding-bottom: 30vh;
 }
 
 #heading{
@@ -28,8 +37,8 @@ p { line-height: 1.9; }
 }
 
 .section{
-    margin-top: 25em;
-    margin-bottom: 35em;
+    padding-top: 10vh;
+    padding-bottom: 5vh;
 }
 
 .sect-l{
@@ -38,12 +47,29 @@ p { line-height: 1.9; }
 }
 
 .sect-sm{
-    height: 25em;
+    height: 45em;
     width: 100%;
     display : flex;
     align-items : center;
     justify-content: center;
 }
+
+#about{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.932);
+
+ }
+
+ #exp{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.932);
+ }
+
+ #skills{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.932);
+ }
+ 
 
 .blue{
     background-color: rgba(156, 177, 236, 0.5);
@@ -57,16 +83,15 @@ p { line-height: 1.9; }
     background-color: rgba(5, 5, 5, 0.692);
 }
 
+.purple{
+    background-color: rgb(146, 96, 192);;
+}
+
 .text{
     text-align: center;
     font-size: 1.5em;
 }
 
-.sect h2 {
-    font-weight: 100;
-    font-size: 2.5rem;
-    padding-top: 5%;
- }
  
  #i{
      color: black;
@@ -84,60 +109,6 @@ p { line-height: 1.9; }
     display: inline-flex;
 }
 
- #about-me{
-    color: rgb(7, 28, 36);
-    background-color: rgba(0, 0, 0, 0.932);
- }
-
- /* #edu{
-     color: rgb(7, 28, 36);
-     background-color: rgba(149, 210, 245, 0.534);
- }
- 
- #edu-title{
-     color: white;
- }
- 
- #learn{
-     text-align: center;
-     color: rgb(236, 222, 139);
-     background-color: rgba(41, 35, 9, 0.5);
- }
- 
- #learn-title{
-     color: white;
- }
- 
- #music{
-     color: rgb(238, 116, 111); 
-     background-color: rgba(48, 20, 8, 0.5);
-    
- }
-
- #music-title{
-     color: white;
- }
- 
- #food{
-     text-align: center;
-     color: #c28ef3;
-     background-color: rgba(14, 2, 22, 0.5);
- }
-  */
- 
- .sect p {
-     color: black;
-     font-weight: 100;
-     font-size: 1.125rem;
-     line-height: 2;
- }
- 
- .sect img{
-     padding-right: 5%;
-     padding-left: 5%;
-     /* padding-bottom: 8px; */
- }
- 
  .content {
      margin-top: 100px;
      margin-bottom: 100px;
@@ -166,8 +137,8 @@ p { line-height: 1.9; }
  }
  
  .navbar.scrolled {
-     /* display: none; */
-     background: white;
+     display: none;
+     /* background: white; */
      /* background: rgb(217, 235, 250);
      transition: background 500ms; */
  }
@@ -260,12 +231,11 @@ p { line-height: 1.9; }
         padding: 8px 15px;
         border: 0;
         border-radius: 0;
-        transform: skewX(-15deg);
-        background-color: rgba(0,0,0,0.5);
+        transform: skewX(-2deg);
         color: white;    
     }
     
-    .navbar-toggler i { transform: skewX(15deg); }
+    .navbar-toggler i { transform: skewX(0deg); }
     
     .navbar-expand-lg {
         padding-left: 0;
@@ -301,6 +271,7 @@ p { line-height: 1.9; }
     #heading{
         font-size: 35px;
     }
+    
     }
 
     @media (min-width:600px) {
@@ -325,6 +296,7 @@ p { line-height: 1.9; }
     #heading{
         font-size: 50px;
     }
+    
     }
     
     @media (min-width:1000px) {
