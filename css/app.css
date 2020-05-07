@@ -107,12 +107,13 @@
 
     #i{
         color: black;
-        font-size: 10vw;
+        font-size: 12vw;
+        font-weight: 700;
     }
 
     .wrap{
     color: black;
-    font-size: 10vw;
+    font-size: 12vw;
     font-weight: 700;
     }
 
@@ -235,12 +236,23 @@
     
     /* views */
         @media (min-width:400px) {
+
         body {
-        font-size: 7px;
+            font-size: 7px;
         }
+
         h1{
             font-size: 14px;
         }
+
+        #i{
+            font-size: 65px;
+        }
+    
+        .wrap{
+            font-size: 65px;
+        }
+
         #heading{
             font-size: 80px;
             margin-bottom: -10px;
@@ -261,6 +273,15 @@
         h1{
             font-size: 16px;
         }
+        
+        #i{
+            font-size: 80px;
+        }
+    
+        .wrap{
+            font-size: 80px;
+        }
+
         #heading{
             font-size: 100px;
             margin-bottom: -10px;
@@ -268,6 +289,7 @@
         #nav-main .nav-link {
             font-size: 18px;
         }
+
         }
         
         @media (min-width:800px) {
@@ -277,6 +299,15 @@
         h1{
             font-size: 20px;
         }
+
+        #i{
+            font-size: 100px;
+        }
+    
+        .wrap{
+            font-size: 100px;
+        }
+
         #heading{
             font-size: 120px;
             margin-bottom: -15px;
@@ -294,6 +325,14 @@
         }
         h1{
             font-size: 26px;
+        }
+
+        #i{
+            font-size: 120px;
+        }
+    
+        .wrap{
+            font-size: 120px;
         }
         #heading{
             font-size: 140px;
