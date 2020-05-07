@@ -62,12 +62,12 @@ p { line-height: 1.9; }
  
  #i{
      color: black;
-     font-size: 5.0em;
+     font-size: 3.5em;
  }
 
 .wrap{
     color: black;
-    font-size: 1.7em;
+    font-size: 1.5em;
     font-weight: 700;
 }
 
@@ -162,19 +162,14 @@ p { line-height: 1.9; }
  }
  
  .navbar.scrolled {
-     display: none;
+     /* display: none; */
+     background: white;
      /* background: rgb(217, 235, 250);
      transition: background 500ms; */
  }
 
- 
  .jumbotron{
      background: none;
- }
- 
- .jumbotron h1{
-     color: aliceblue;
-     font-size: 3em;
  }
  
  /* animation */
