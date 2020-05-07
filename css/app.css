@@ -1,6 +1,6 @@
 body {
     font-family: 'Railway', Arial, sans-serif;
-    font-size: 17px;
+    font-size: 14px;
     font-weight: 300;
     overflow-x: hidden;
     background-color: white;
@@ -15,6 +15,12 @@ a:hover { text-decoration: none; }
 ul { padding: 0; }
 button:focus { outline: none; }
 p { line-height: 1.9; }
+
+#intro{
+    text-align: center;
+    padding-top: 22vh;
+    padding-bottom: 10vh;
+}
 
 #heading{
     font-size: 9.0vw;
@@ -52,7 +58,7 @@ p { line-height: 1.9; }
 
 .text{
     text-align: center;
-    font-size: 1.8vw;
+    font-size: 1.5em;
 }
 
 .sect h2 {
@@ -70,11 +76,6 @@ p { line-height: 1.9; }
     color: black;
     font-size: 8vw;
     font-weight: 700;
-}
-
-#intro{
-    text-align: center;
-    padding-top: 7em;
 }
 
 #text-intro{
@@ -414,3 +415,52 @@ p { line-height: 1.9; }
      .nav-item:hover .tm-nav-link {
          color: #9CC;
      }
+
+     
+     @media (min-width:400px) {
+        body {
+            font-size: 7px;
+          }
+          h1{
+              font-size: 14px;
+          }
+          #heading{
+              font-size: 35px;
+          }
+        }
+
+     @media (min-width:600px) {
+        body {
+          font-size: 8px;
+        }
+        h1{
+            font-size: 16px;
+        }
+        #heading{
+            font-size: 40px;
+        }
+      }
+      
+      @media (min-width:800px) {
+        body {
+          font-size: 10px;
+        }
+        h1{
+            font-size: 20px;
+        }
+        #heading{
+            font-size: 50px;
+        }
+      }
+      
+      @media (min-width:1000px) {
+        body {
+          font-size: 12px;
+        }
+        h1{
+            font-size: 26px;
+        }
+        #heading{
+            font-size: 70px;
+        }
+    }
