@@ -11,7 +11,6 @@ body {
     font-family: 'Railway', Arial, sans-serif;
     font-size: 14px;
     font-weight: 300;
-
     background-color: white;
 }
 
@@ -38,7 +37,7 @@ p { line-height: 1.9; }
 
 .section{
     padding-top: 10vh;
-    padding-bottom: 5vh;
+    /* padding-bottom: 5vh; */
 }
 
 .sect-l{
@@ -54,23 +53,6 @@ p { line-height: 1.9; }
     justify-content: center;
 }
 
-#about{
-    color: white;
-    background-color: rgba(0, 0, 0, 0.932);
-
- }
-
- #exp{
-    color: white;
-    background-color: rgba(0, 0, 0, 0.932);
- }
-
- #skills{
-    color: white;
-    background-color: rgba(0, 0, 0, 0.932);
- }
- 
-
 .blue{
     background-color: rgba(156, 177, 236, 0.5);
 }
@@ -80,11 +62,22 @@ p { line-height: 1.9; }
 }
 
 .black{
-    background-color: rgba(5, 5, 5, 0.692);
+    background-color: rgba(0, 0, 0, 0.932);
+    color: white;
 }
 
 .purple{
-    background-color: rgb(146, 96, 192);;
+    background-color: rgb(146, 96, 192);
+}
+
+.grey{
+    background-color: rgb(128, 125, 131);
+    color: white;
+}
+
+.white{
+    background-color: white;
+    color: black;
 }
 
 .text{
@@ -124,11 +117,10 @@ p { line-height: 1.9; }
  #nav-main .nav-link {
      font-family: Permanent Marker, serif;
      color: black;
-     
  }
  
  #nav-main .nav-link:hover {
-     color: lightskyblue;
+     color: rgba(156, 177, 236, 0.5);
  }
  
  #nav-main .navbar-brand {
@@ -231,18 +223,18 @@ p { line-height: 1.9; }
         padding: 8px 15px;
         border: 0;
         border-radius: 0;
-        transform: skewX(-2deg);
+        /* transform: skewX(-2deg); */
         color: white;    
     }
     
-    .navbar-toggler i { transform: skewX(0deg); }
+    /* .navbar-toggler i { transform: skewX(0deg); } */
     
-    .navbar-expand-lg {
+    /* .navbar-expand-lg {
         padding-left: 0;
         padding-right: 0;
-    }
+    } */
     
-    .navbar-expand-lg .navbar-nav .nav-link { padding: 0; }
+    .navbar-expand-lg .navbar-nav .nav-link { padding-left: 15px; }
     
     .navbar-expand-lg .navbar-nav .tm-nav-link {
         font-size: 1.3rem;
@@ -271,6 +263,9 @@ p { line-height: 1.9; }
     #heading{
         font-size: 35px;
     }
+    #nav-main .nav-link {
+        font-size: 16px;
+    }
     
     }
 
@@ -284,6 +279,9 @@ p { line-height: 1.9; }
     #heading{
         font-size: 40px;
     }
+    #nav-main .nav-link {
+        font-size: 18px;
+    }
     }
     
     @media (min-width:800px) {
@@ -295,6 +293,10 @@ p { line-height: 1.9; }
     }
     #heading{
         font-size: 50px;
+    }
+
+    #nav-main .nav-link {
+        font-size: 20px;
     }
     
     }
@@ -308,5 +310,8 @@ p { line-height: 1.9; }
     }
     #heading{
         font-size: 70px;
+    }
+    #nav-main .nav-link {
+        font-size: 28px;
     }
 }
