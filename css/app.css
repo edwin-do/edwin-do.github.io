@@ -19,6 +19,12 @@
         transition: all 0.3s ease; 
         text-decoration: none;
     }
+
+    /* responsive img */
+    img{
+        width: 100%;
+        height: auto;
+    }
     
 /* views */
     @media (min-width:400px) {
