@@ -22,7 +22,7 @@
 
     /* responsive img */
     img{
-        width: 100%;
+        width: 85%;
         height: auto;
     }
     
@@ -109,7 +109,7 @@
             font-size: 12px;
         }
         h1{
-            font-size: 26px;
+            font-size: 40px;
         }
 
         #i{
