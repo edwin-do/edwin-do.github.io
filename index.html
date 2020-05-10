@@ -147,16 +147,16 @@
             <h1 id="heading">Experience.</h1>
             <div id="trigger-exp"></div>
             <div class="row" id="reveal-exp">
-                <div class="col-xs-12 col-md-7 sect-sm purple">
+                <div class="col-xs-12 col-lg-7 sect-sm purple">
                     <div class="container text">
-                        <h1>Software Developer Intern [coop]</h1>
+                        <h1>Software Developer Intern</h1>
                         <p>I currently study Software Engineering & Management at McMaster University located in Hamilton, Ontario. 
                             Courses that I have taken include:</p>
                     </div>
                 </div>
-                <div class="col-xs-12 col-md-5 sect-sm pink" >
+                <div class="col-xs-12 col-lg-5 sect-sm pink" >
                     <div class="container text">
-                        <h1>Technical Systems Analyst [coop]</h1>
+                        <h1>Technical Systems Analyst</h1>
                         <p>I currently study Software Engineering & Management at McMaster University located in Hamilton, Ontario. 
                             Courses that I have taken include:</p>
                     </div>
@@ -166,14 +166,14 @@
             <div class="row">
                 <div class="container">
                     <div class="row" id="reveal-exp">
-                        <div class="col-xs-12 col-md-5 sect-sm red">
+                        <div class="col-xs-12 col-lg-5 sect-sm red">
                             <div class="container text">
                                 <h1>Web & Desktop Applications Assistant</h1>
                                 <p>I currently study Software Engineering & Management at McMaster University located in Hamilton, Ontario. 
                                     Courses that I have taken include:</p>
                             </div>
                         </div>
-                        <div class="col-xs-12 col-md-7 sect-sm blue">
+                        <div class="col-xs-12 col-lg-7 sect-sm blue">
                             <div class="container text">
                                 <h1>Computer Science Project Developer</h1>
                                 <p>I currently study Software Engineering & Management at McMaster University located in Hamilton, Ontario. 
@@ -248,7 +248,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
     <script type="text/javascript" src="js/animation.js"></script>
     <script type="text/javascript" src="js/scroll.js"></script>
     <script src="js/jquery-3.4.1.min.js"></script>
@@ -265,9 +265,15 @@
     </script>
 
     <script>
+        $(window).on('beforeunload', function() {
+            $(window).scrollTop(0);
+        });
+    </script>
+
+    <script>
         $(document).ready(function() {
             // Animate loader off screen
-            preloaderFadeOutTime = 1500;
+            preloaderFadeOutTime = 1000;
             function hidePreloader() {
                 var preloader = $('.se-pre-con');
                 preloader.fadeOut(preloaderFadeOutTime);
