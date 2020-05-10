@@ -1,3 +1,31 @@
+/* intro animation */
+#intro{
+    text-align: center;
+    padding-top: 25vh;
+    padding-bottom: 30vh;
+}
+
+#i{
+    color: black;
+    font-size: 12vw;
+    font-weight: 700;
+}
+
+.wrap{
+    color: black;
+    font-size: 12vw;
+    font-weight: 700;
+}
+
+#text-intro{
+width: fit-content;
+display: inline-flex;
+}
+
+.jumbotron{
+    background: none;
+}
+
 /* scroll animation */
     /* about */
     #reveal-about {

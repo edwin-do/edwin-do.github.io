@@ -1,5 +1,4 @@
 /* navbar */
-
 #nav-main {
     font-size: 1.5rem;
     font-weight: 100;    
@@ -55,34 +54,6 @@
     box-shadow: none;
 }
 
-/* intro animation */
-#intro{
-    text-align: center;
-    padding-top: 25vh;
-    padding-bottom: 30vh;
-}
-
-#i{
-    color: black;
-    font-size: 12vw;
-    font-weight: 700;
-}
-
-.wrap{
-    color: black;
-    font-size: 12vw;
-    font-weight: 700;
-}
-
-#text-intro{
-width: fit-content;
-display: inline-flex;
-}
-
-.jumbotron{
-    background: none;
-}
-
 /* sections */
 #heading{
     font-weight: 700;
@@ -111,7 +82,6 @@ display: inline-flex;
 
 .text{
     text-align: center;
-    font-size: 1.5em;
 }
 
 .content {

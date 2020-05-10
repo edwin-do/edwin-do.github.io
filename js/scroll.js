@@ -1,11 +1,11 @@
 // init controller
-var controller = new ScrollMagic.Controller({globalSceneOptions: {triggerHook: "onEnter", duration: "200%"}});
+var controller = new ScrollMagic.Controller({globalSceneOptions: {triggerHook: "onEnter", reverse: false}});
 
     //About
     new ScrollMagic.Scene({
         triggerElement: "#trigger-about",
         triggerHook: 1.0,
-        duration: "140%",
+        // duration: "140%",
         offset: 100
     })
     .setClassToggle("#reveal-about", "visible")
@@ -15,7 +15,7 @@ var controller = new ScrollMagic.Controller({globalSceneOptions: {triggerHook: "
     new ScrollMagic.Scene({
         triggerElement: "#trigger-exp",
         triggerHook: 1.0,
-        duration: "140%",
+        // duration: "140%",
         offset: 100
     })
     .setClassToggle("#reveal-exp", "visible")
@@ -25,8 +25,9 @@ var controller = new ScrollMagic.Controller({globalSceneOptions: {triggerHook: "
     new ScrollMagic.Scene({
         triggerElement: "#trigger-skills",
         triggerHook: 1.0,
-        duration: "140%",
+        // duration: "140%",
         offset: 100
+        // reverse: true
     })
     .setClassToggle("#reveal-skills", "visible")
     .addTo(controller);
