@@ -29,7 +29,7 @@
         <nav id="nav-main" class="navbar navbar-dark navbar-expand-lg py-0 fixed-top">
             <!-- <a href="#" class="navbar-brand collapse">edwin</a> -->
             <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks" aria-label="Toggle navigation">
-                <img id="menu" src="./icons/menu.png" alt="">
+                <img id="menu" src="./img/menu.png" alt="">
             </button>
             <div class="collapse navbar-collapse" id="navLinks">
                 <ul class="navbar-nav">
@@ -247,43 +247,15 @@
     <!-- scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
     <script type="text/javascript" src="js/animation.js"></script>
     <script type="text/javascript" src="js/scroll.js"></script>
+    <script type="text/javascript" src="js/load.js"></script>
     <script src="js/bootstrap.min.js"></script>
 
-    <script>
-        $(function () {
-            $(document).scroll(function () {
-                var $nav = $("#nav-main");
-                var $top = $("#top");
-                $nav.toggleClass("scrolled", $(this).scrollTop() > $top.height());
-            });
-        });
-    </script>
-
-    <script>
-        $(window).on('beforeunload', function() {
-            $(window).scrollTop(0);
-        });
-    </script>
-
-    <script>
-        $(document).ready(function() {
-            // Animate loader off screen
-            preloaderFadeOutTime = 1000;
-            function hidePreloader() {
-                var preloader = $('.se-pre-con');
-                preloader.fadeOut(preloaderFadeOutTime);
-                }
-            hidePreloader();
-        }); 
-    </script>
 </body>
 
 </html>

@@ -24,13 +24,6 @@
         width: 85%;
         height: auto;
     }
-
-    /* .container {  
-        display: grid;  
-        grid-gap: 5px;  
-        grid-template-columns: repeat(2, minmax(100px, 1fr));
-        grid-template-rows: repeat(2, 100px);  
-    } */
     
 /* views */
     @media (min-width:400px) {
