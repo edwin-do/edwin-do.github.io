@@ -21,6 +21,7 @@
 </head>
 
 <body>
+    <div class="se-pre-con"></div>
     <!-- nav-bar begins -->
     <div class="container">
         <nav id="nav-main" class="navbar navbar-dark navbar-expand-lg py-0 fixed-top">
@@ -246,6 +247,8 @@
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
     <script type="text/javascript" src="js/animation.js"></script>
     <script type="text/javascript" src="js/scroll.js"></script>
     <script src="js/jquery-3.4.1.min.js"></script>
@@ -259,6 +262,18 @@
                 $nav.toggleClass("scrolled", $(this).scrollTop() > $top.height());
             });
         });
+    </script>
+
+    <script>
+        $(document).ready(function() {
+            // Animate loader off screen
+            preloaderFadeOutTime = 1500;
+            function hidePreloader() {
+                var preloader = $('.se-pre-con');
+                preloader.fadeOut(preloaderFadeOutTime);
+                }
+            hidePreloader();
+        }); 
     </script>
 </body>
 
