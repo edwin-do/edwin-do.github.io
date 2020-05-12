@@ -29,46 +29,24 @@
         <nav id="nav-main" class="navbar navbar-dark navbar-expand- py-0 fixed-top">
             <!-- <a href="#" class="navbar-brand collapse">edwin</a> -->
             <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks" aria-label="Toggle navigation">
-                <img onclick="openNav()" id="menu" src="./img/menu.png" alt="">
+                <img id="menu" src="./img/menu.png" alt="">
             </button>
-            <!-- <div class="collapse navbar-collapse" id="navLinks">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a href="" class="nav-link">home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#about" class="nav-link">about</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#exp" class="nav-link">experience</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#skills" class="nav-link">skills</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="" class="nav-link">resume</a>
-                    </li>
-                </ul>
-            </div> -->
         </nav>
     </div>
 
     <!-- The overlay --> 
         <div id="myNav" class="overlay">
-            
             <!-- Overlay content -->
             <div class="overlay-content">
-            <a href="" class="nav-link">home</a>
-            <a href="#about" class="nav-link">about</a>
-            <a href="#exp" class="nav-link">experience</a>
-            <a href="#skills" class="nav-link">skills</a>
-            <a href="" class="nav-link">resume</a>
+            <a onclick=closeNav() href="" class="nav-link">home</a>
+            <a onclick=closeNav() href="#about" class="nav-link">about</a>
+            <a onclick=closeNav() href="#exp" class="nav-link">experience</a>
+            <a onclick=closeNav() href="#skills" class="nav-link">skills</a>
+            <a onclick=closeNav() href="" class="nav-link">resume</a>
             </div>
     
         </div>
     </div>
-        <!-- Use any element to open/show the overlay navigation menu -->
-        <!-- <span onclick="openNav()">open</span> -->
     <!-- nav-bar ends -->
     
     <!-- animated intro begins-->
