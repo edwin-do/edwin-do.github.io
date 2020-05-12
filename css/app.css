@@ -2,6 +2,8 @@
     html {
         overflow: scroll;
         overflow-x: hidden;
+        max-width: 100%;
+        min-width: 100%;
     }
     ::-webkit-scrollbar {
         width: 0px;  /* Remove scrollbar space */
@@ -9,6 +11,8 @@
     }
 
     body {
+        max-width: 100%;
+        min-width: 100%;
         font-family: 'Abel', sans-serif;
         font-size: 14px;
         background-color: white;
@@ -19,6 +23,10 @@
         text-decoration: none;
     }
 
+    div {
+        box-sizing: border-box;
+    }
+
     /* responsive img */
     img{
         width: 85%;
@@ -26,7 +34,7 @@
     }
     
 /* views */
-    @media (min-width:400px) {
+    @media (min-width:350px) {
         body {
             font-size: 10px;
         }
@@ -42,7 +50,7 @@
         }
 
         #heading{
-            font-size: 80px;
+            font-size: 70px;
             margin-bottom: -18px;
             position: relative;
             z-index: 2; 
