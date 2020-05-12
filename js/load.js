@@ -27,7 +27,6 @@ $( document ).ready(function() {
 //   /* Close when someone clicks on the "x" symbol inside the overlay */
   function closeNav() {
     location.reload();
-    document.getElementById("myNav").style.width = "0%";
   }
 
 // hide nav bar
