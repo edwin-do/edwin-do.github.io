@@ -28,7 +28,7 @@
     border-color: transparent;
 }
 .navbar-toggler {
-    padding-left: 0px;
+    padding-left: 10px;
     /* transform: skewX(-2deg); */
     color: white;
     border-color: transparent;
@@ -74,6 +74,16 @@
     text-align: center;
     height: 3px;
     background-color: white;
+    margin: 60px auto 30px;
+    width: 60px;
+}
+
+.divider-dark{
+    display: block;
+    position: relative;
+    text-align: center;
+    height: 3px;
+    background-color: black;
     margin: 60px auto 30px;
     width: 60px;
 }
