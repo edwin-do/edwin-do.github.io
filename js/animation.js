@@ -46,9 +46,6 @@ TxtType.prototype.tick = function() {
             that.tick();
             }, delta);
     }
-
-
-    
 };
 
 window.onload = function() {
