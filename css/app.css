@@ -45,7 +45,7 @@
     }
 
     .wrap{
-        font-size: 5rem;
+        font-size: 5.5rem;
     } 
 
     /* #heading{
@@ -58,6 +58,7 @@
         font-family: 'Source Sans Pro', sans-serif;
         position: relative;
         z-index: 2; 
+        margin-bottom: -1.2rem;  
     }
 
     #thumbnail{
@@ -68,24 +69,27 @@
 /* views */
     @media (min-width:350px) {
         body {
-            font-size: 6px;
+            font-size: 62.5%;
         }
     }
 
     @media (min-width:600px) {
         body {
-            font-size: 8px;
+            font-size: 65.5%;
         }
+        .wrap{
+            font-size: 6.5rem;
+        } 
     }
     
     @media (min-width:800px) {
         body {
-            font-size: 10px;
+            font-size: 70%x;
         }
     }
     
     @media (min-width:1000px) {
         body {
-            font-size: 12px;
+            font-size: 72.5%;
         }
 }
