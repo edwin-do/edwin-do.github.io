@@ -57,38 +57,6 @@
     box-shadow: none;
 }
 
-/* #menu{
-    width: 100%;
-    height: auto;
-} */
-
-/* sections */
-
-/* .divider{
-    display: block;
-    position: relative;
-    text-align: center;
-    height: 3px;
-    background-color: white;
-    margin: 30px auto 30px;
-    width: 60px;
-}
-
-.divider-dark{
-    display: block;
-    position: relative;
-    text-align: center;
-    height: 3px;
-    background-color: black;
-    margin: 60px auto 30px;
-    width: 60px;
-} */
-
-/* .section{
-    padding-top: 10vh;
-    padding-bottom: 3vh;
-} */
-
 .sect-l{
     height: 30em;
     width: 100%;
@@ -101,6 +69,19 @@
     align-items : center;
     justify-content: center;
 }
+
+
+/* #menu{
+    width: 100%;
+    height: auto;
+} */
+
+/* sections */
+
+/* .section{
+    padding-top: 10vh;
+    padding-bottom: 3vh;
+} */
 
 /* .text{
     text-align: center;
