@@ -57,18 +57,14 @@
     box-shadow: none;
 }
 
-#menu{
+/* #menu{
     width: 100%;
     height: auto;
-}
+} */
 
 /* sections */
-#heading{
-    font-weight: 700;
-    font-family: 'Source Sans Pro', sans-serif;
-}
 
-.divider{
+/* .divider{
     display: block;
     position: relative;
     text-align: center;
@@ -86,12 +82,12 @@
     background-color: black;
     margin: 60px auto 30px;
     width: 60px;
-}
+} */
 
-.section{
+/* .section{
     padding-top: 10vh;
     padding-bottom: 3vh;
-}
+} */
 
 .sect-l{
     height: 30em;
@@ -106,22 +102,22 @@
     justify-content: center;
 }
 
-.text{
+/* .text{
     text-align: center;
-}
+} */
 
-.content {
+/* .content {
     margin-top: 100px;
     margin-bottom: 100px;
     padding-left: 5%;
     padding-right: 5%;
-}
+} */
 
-.connect{
+/* .connect{
     max-width: 100%;
     max-height: 100%;
     position: relative;
     height: auto;
     width: 50px;
     margin-right: 3px;
-}
+} */
