@@ -1,4 +1,8 @@
  /* colours & themes */
+.font-grey{
+    color: rgb(253, 250, 236);
+}
+
  .blue{
     background-color: rgba(79, 94, 134, 0.671);
 }
