@@ -1,9 +1,24 @@
-# Welcome
+# edwin-do.github.io
 
-This is a website about me. :) 
+## Project setup
+```
+npm install
+```
 
-## Updates
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
 
-I will do my best to update this website as frequent as I can to keep things up to date. 
+### Compiles and minifies for production
+```
+npm run build
+```
 
-**A new version of the website is coming soon**
+### Lints and fixes files
+```
+npm run lint
+```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
