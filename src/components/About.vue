@@ -28,10 +28,9 @@
             </p>
             <p>
               I have always been drawn to tech and curious about how things are
-              built. Especially tech since we would also run into various
-              computer problems with that PC everyone shared growing up. Today,
-              I continuously seek for new opportunities to learn and sharpen the
-              tools I have to build new things.
+              built. I think that problems is what drives the development of
+              innovative solutions. Problems will vary based on industry, the
+              end-users and the current technological development.
             </p>
           </div>
         </div>
@@ -53,7 +52,7 @@
                 <p>
                   After switching programs, I noticed that my courses are more
                   aligned with my interests and that this is something I wish to
-                  pursue as a career. Today, I am a third year Software
+                  pursue as a career. Today, I am a fourth year Software
                   Engineering and Management Student aspiring to be a future
                   Software Engineer and Product Manager.
                 </p>
@@ -67,7 +66,8 @@
                   As a tech enthusiast, I enjoy reading about new upcoming tech
                   and watching the latest tech reviews. I also enjoy reading the
                   TLDR newsletter which I highly recommend. You can subscribe to
-                  it here: https://www.tldrnewsletter.com/
+                  it here: https://www.tldrnewsletter.com/. Aside from tech, I
+                  love to play board games and go out to eat with my friends.
                 </p>
                 <p>
                   I believe very strongly about a good work-life balance. In my
@@ -76,6 +76,14 @@
                   would also watch some TV shows and some of my favourites
                   include Friends, The IT Crowd and The Boys.
                 </p>
+                <vs-button
+                  shadow
+                  gradient
+                  :active="active == 1"
+                  @click="active = 1"
+                >
+                  Default
+                </vs-button>
               </div>
             </div>
           </div>

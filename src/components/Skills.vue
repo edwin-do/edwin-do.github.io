@@ -20,7 +20,8 @@
             <h1>Experienced</h1>
             <div class="divider"></div>
             <p>
-              Javascript, Python, React, Java, Node.js, MongoDB and Express.js
+              Javascript, Python, React, Vue, Java, Node.js, MongoDB and
+              Express.js
             </p>
           </div>
         </div>
@@ -34,7 +35,8 @@
                 <h1>Knowledgeable</h1>
                 <div class="divider"></div>
                 <p>
-                  Dart, SpringBoot, SQL, DB2, C#, C++, Android Studio, Flutter
+                  AWS, Docker, Golang, Dart, SpringBoot, SQL, DB2, C#, C++,
+                  Android Studio, Flutter, Figma
                 </p>
               </div>
             </div>
@@ -42,9 +44,7 @@
               <div class="container text">
                 <h1>Currently Learning</h1>
                 <div class="divider"></div>
-                <p>
-                  Ruby On Rails, Docker, AWS, GraphQL
-                </p>
+                <p>Web3.0, Solidity, Sway</p>
               </div>
             </div>
           </div>
