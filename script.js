@@ -77,8 +77,8 @@ $(document).ready((function() {
 	console.log("Setting Timeout!");
   setTimeout(function(){
   	console.log("Timeout RAN!");
-  	$('#resume').removeClass('invisible');
-  	$('#resume').addClass('animated fadeIn');
+  	$('#email').removeClass('invisible');
+  	$('#email').addClass('animated fadeIn');
   }
   , 1750);
 }));
