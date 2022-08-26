@@ -103,7 +103,7 @@ $(document).ready((function() {
 	console.log(($(window).width()/$(window).height()));
 	/*introCol hide content*/
 	$(window).scroll(function(){
-		if (($(window).width()/$(window).height()) > 1.4469){
+		if (($(window).width()/$(window).height()) > 1.5469){
 	    if ($(this).scrollTop() < 35) {	
 	   $('#introTitle').removeClass('flipOutX');
 	   setTimeout(function(){
@@ -363,14 +363,81 @@ $(document).ready((function() {
 
 }});
 
+// function showMore(){
+//     var $this = $(this); 
+//     var $content = $this.parent().prev("div.content");
+//     var linkText = $this.text().toUpperCase();    
+
+//     if(linkText === "SHOW MORE"){
+//         linkText = "Show less";
+//         $content.switchClass("hideContent", "showContent", 400);
+//     } else {
+//         linkText = "Show more";
+//         $content.switchClass("showContent", "hideContent", 400);
+//     };
+
+// }
 
 
-$("a[href^='#']").click(function(e) {
-	e.preventDefault();
+// $(".show-more a").on("click", function() {
+// 	console.log("here");
+//     var $this = $(this); 
+//     var $content = $this.parent().prev("div.content");
+//     var linkText = $this.text().toUpperCase();    
+
+//     if(linkText === "SHOW MORE"){
+//         linkText = "Show less";
+//         $content.switchClass("hideContent", "showContent", 400);
+//     } else {
+//         linkText = "Show more";
+//         $content.switchClass("showContent", "hideContent", 400);
+//     };
+
+//     $this.text(linkText);
+// });​
+
+function readMore(experience) {
+	let dots = document.querySelector(`.experience[data-experience="${experience}"] .dots`);
+    let moreText = document.querySelector(`.experience[data-experience="${experience}"] .more`); 
+    let btnText = document.querySelector(`.experience[data-experience="${experience}"] .myBtn`);
+	// var dots = document.getElementById("dots");
+	// var moreText = document.getElementById("more");
+	// var btnText = document.getElementById("myBtn");
+  
+	if (dots.style.display === "none") {
+	  dots.style.display = "inline";
+	  btnText.innerHTML = "Read more";
+	  moreText.style.display = "none";
+	} else {
+	  dots.style.display = "none";
+	  btnText.innerHTML = "Read less";
+	  moreText.style.display = "inline";
+	}
+  } 
+
+// $("#myBtn").on("click", function(e) {
+// 	e.preventDefault();
+//     var dots = document.getElementById("dots");
+// 	var moreText = document.getElementById("more");
+// 	var btnText = document.getElementById("myBtn");
+// 	console.log("here");
+// 	if (dots.style.display === "none") {
+// 	  dots.style.display = "inline";
+// 	  btnText.innerHTML = "Read more";
+// 	  moreText.style.display = "none";
+// 	} else {
+// 	  dots.style.display = "none";
+// 	  btnText.innerHTML = "Read less";
+// 	  moreText.style.display = "inline";
+// 	}
+// });​
+
+// $("a[href^='#']").click(function(e) {
+// 	e.preventDefault();
 	
-	var position = $($(this).attr("href")).offset().top;
+// 	var position = $($(this).attr("href")).offset().top;
 
-	$("body, html").animate({
-		scrollTop: position
-	}, 2000 );
-});
+// 	$("body, html").animate({
+// 		scrollTop: position
+// 	}, 2000 );
+// });
