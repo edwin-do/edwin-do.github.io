@@ -20,19 +20,20 @@
       <link href="https://fonts.googleapis.com/css?family=Montserrat|Pridi" rel="stylesheet">
 
       <!-- Bootstrap CSS -->
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.1/css/font-awesome.min.css"> -->
     <link rel="stylesheet" type="text/css" href="styles.css">
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <title> </ edwin do /> </title>
   </head>
   <body>
-    <div id="topHeader" class="navbar navbar-toggleable-md navbar-inverse fixed-top bg-inverse justify-content-end">
-      <img id="github" class="navbarIcon animated invisible" src="images/github2.png" alt="GitHub" data-toggle="tooltip" title="GitHub" onclick="window.open('http://www.github.com/htharding', '_blank');">
-      <img id="linkedin" class="navbarIcon animated invisible" src="images/linkedin2.png" alt="LinkedIn" data-toggle="tooltip" title="LinkedIn" onclick="window.open('http://www.linkedin.com/in/hunter-harding', '_blank');">
-      <img id="email" class="navbarIcon animated invisible" src="images/email2.png" alt="Email" data-toggle="tooltip" title="Email" onclick="window.open('http://www.linkedin.com/in/hunter-harding', '_blank');">
-    </div>
     <div class="container-fluid">
+      <div id="topHeader" class="navbar navbar-toggleable-md navbar-inverse fixed-top bg-inverse justify-content-end">
+        <img id="github" class="navbarIcon animated invisible" src="images/github2.png" alt="GitHub" data-toggle="tooltip" title="GitHub" onclick="window.open('http://www.github.com/htharding', '_blank');">
+        <img id="linkedin" class="navbarIcon animated invisible" src="images/linkedin2.png" alt="LinkedIn" data-toggle="tooltip" title="LinkedIn" onclick="window.open('http://www.linkedin.com/in/hunter-harding', '_blank');">
+        <img id="email" class="navbarIcon animated invisible" src="images/email2.png" alt="Email" data-toggle="tooltip" title="Email" onclick="window.open('http://www.linkedin.com/in/hunter-harding', '_blank');">
+      </div>
       <div class="row">
         <div id="introCol" class="col-md-12">
           <div class ="introWrapper centerIt">
@@ -50,7 +51,7 @@
       <div class="row">
           <div name="aboutMeCol" id="aboutMeCol" class="col-md-12">
               <div class="aboutMeWrapper">
-                <div id="aboutMeCard" class="aboutMeCard animated invisible">
+                <div id="aboutMeCard" class="aboutMeCard animated">
                   <div class="row">
                     <div class="col-md-5 my-auto">
                       <img id="animatedPortrait" class="img-fluid rounded-circle" src="images/profile.jpg" alt="Portrait">
@@ -89,7 +90,7 @@
                     </div>
                   </div>
                   <a id="aboutMeButtonWrapper" class="scroll" href="#projectsCol">
-                    <button id="aboutMeButton1" type="button" class="btn btn-outline-primary aboutMeButton animated invisible" >download my resume!</button>
+                    <button id="aboutMeButton1" type="button" class="btn btn-outline-primary aboutMeButton animated" >download my resume!</button>
                   </a>
                 </div>
               </div>
@@ -120,7 +121,7 @@
               </div>
             </div>
             <!-- timeline -->
-                <div class="container">
+                <!-- <div class="container">
                   <div class="section-header">
                     <h2>experience.</h2>
                     <hr>
@@ -172,8 +173,58 @@
                       <i class="step-line"></i>
                       <div class="date">2002</div>
                     </div>
-                  </div>
-            <hr>
+                  </div> -->
+                  <div class="container">
+                    <div class="section-header">
+                      <h2>experience.</h2>
+                      <hr>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="Yearly-timeline">
+                                <div class="timeline">
+                                    <a href="" class="timeline-content">
+                                        <div class="timeline-icon"><img class="expImage" src="images/freshbooks.jpg"></div>
+                                        <h3 class="title">2022</h3>
+                                        <h6 class="font-weight-light">Software Engineering Intern @ FreshBooks</h6>
+                                        <p class="description">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer males uada tellus lorem, et condimentum neque commodo Integer males uada tellus lorem, et condimentum neque commodo
+                                        </p>
+                                    </a>
+                                </div>
+                                <div class="timeline">
+                                    <a href="" class="timeline-content">
+                                        <div class="timeline-icon"><img class="expImage" src="images/menlolab.png"></div>    
+                                        <h3 class="title">2013-2017</h3>
+                                        <p class="description">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer males uada tellus lorem, et condimentum neque commodo Integer males uada tellus lorem, et condimentum neque commodo
+                                        </p>
+                                    </a>
+                                </div>
+                                <div class="timeline">
+                                    <a href="" class="timeline-content">
+                                        <div class="timeline-icon"><img class="expImage" src="images/mars.jpg"></div>    
+                                        <h3 class="title">2009-2012</h3>
+                                        <p class="description">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer males uada tellus lorem, et condimentum neque commodo Integer males uada tellus lorem, et condimentum neque commodo
+                                        </p>
+                                    </a>
+                                </div>
+                                <div class="timeline">
+                                    <a href="" class="timeline-content">
+                                        <div class="timeline-icon"><img class="expImage" src="images/rbc.png"></div>    
+                                        <h3 class="title">2006-2009</h3>
+                                        <p class="description">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer males uada tellus lorem, et condimentum neque commodo Integer males uada tellus lorem, et condimentum neque commodo
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <!-- FOOTER -->
+                  <hr>
             <div class="jumbotron">
               <h3 class="display-6">Hello, world!</h3>
               <p class="lead">I'm always open to having chats about tech, food and travelling. Or anything you might want to chat about!</p>

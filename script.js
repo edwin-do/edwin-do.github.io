@@ -96,8 +96,6 @@ $(document).ready((function() {
         $('#projectCard2').removeClass("animated invisible ");
         $('#projectCard3').removeClass("animated invisible ");
         $('#contactCard').removeClass("animated invisible ");
- 
-
     };
 
 }));
@@ -223,22 +221,22 @@ $(document).ready((function() {
 
 
 	/* remove main body if too late*/
-	if ($(this).scrollTop() > 1400) {
-		$('.aboutMeCard').removeClass('fadeIn');
-		setTimeout(function(){
-		 	$('.aboutMeButton').removeClass('fadeIn');
-		 }, 200);
-		console.log("Removing FadeIn");
-		if($( ".aboutMeCard" ).hasClass( "fadeOut" )){
-		} else{
-		 $('.aboutMeCard').addClass('fadeOut');
-		 setTimeout(function(){
-		 	$('.aboutMeButton').addClass('fadeOut');
-		 }, 200);
-    	} 
-    }else {
+	// if ($(this).scrollTop() > 500) {
+	// 	$('.aboutMeCard').removeClass('fadeIn');
+	// 	setTimeout(function(){
+	// 	 	$('.aboutMeButton').removeClass('fadeIn');
+	// 	 }, 200);
+	// 	console.log("Removing FadeIn");
+	// 	if($( ".aboutMeCard" ).hasClass( "fadeOut" )){
+	// 	} else{
+	// 	 $('.aboutMeCard').addClass('fadeOut');
+	// 	 setTimeout(function(){
+	// 	 	$('.aboutMeButton').addClass('fadeOut');
+	// 	 }, 200);
+    // 	} 
+    // }else {
 
-    }
+    // }
 
 
 
