@@ -179,44 +179,44 @@ $(document).ready((function() {
 
 
 	/*show the main body, remove if too early*/
-    if ($(this).scrollTop() > 400 && $(this).scrollTop() < 1400) {	
-	   $('.aboutMeCard').removeClass('fadeOut');
-	   	setTimeout(function(){
-		 	$('.aboutMeButton').removeClass('fadeOut');
-		 }, 200);
-	   console.log("Removing fadeOut");
-       $('.aboutMeCard').addClass('fadeIn');
-      	setTimeout(function(){
-		 	$('.aboutMeButton').addClass('fadeIn');
-		 }, 200);
-	   console.log("Adding fadeIn");
-	   if($( ".aboutMeCard" ).hasClass( "invisible" )){
+    // if ($(this).scrollTop() > 400 && $(this).scrollTop() < 1500) {	
+	//    $('.aboutMeCard').removeClass('fadeOut');
+	//    	setTimeout(function(){
+	// 	 	$('.aboutMeButton').removeClass('fadeOut');
+	// 	 }, 200);
+	//    console.log("Removing fadeOut");
+    //    $('.aboutMeCard').addClass('fadeIn');
+    //   	setTimeout(function(){
+	// 	 	$('.aboutMeButton').addClass('fadeIn');
+	// 	 }, 200);
+	//    console.log("Adding fadeIn");
+	//    if($( ".aboutMeCard" ).hasClass( "invisible" )){
 
-		 $('.aboutMeCard').removeClass('invisible');
-		setTimeout(function(){
-		 	$('.aboutMeButton').removeClass('invisible');
-		 }, 200);
-		 console.log("Removing Invisible");
-		 $('.aboutMeCard').addClass('visible');
-		setTimeout(function(){
-		 	$('.aboutMeButton').addClass('visible');
-		 }, 200);
-		 console.log("Adding Visible");
-	   }
-	   else{
-	   };
-    } else {
-		$('.aboutMeCard').removeClass('fadeIn');
-		setTimeout(function(){
-		 	$('.aboutMeButton').removeClass('fadeIn');
-		 }, 200);
-		console.log("Removing FadeIn");
-		$('.aboutMeCard').addClass('fadeOut');
-		setTimeout(function(){
-		 	$('.aboutMeButton').addClass('fadeOut');
-		 }, 200);
-		console.log("Adding fadeOut");
-    };
+	// 	 $('.aboutMeCard').removeClass('invisible');
+	// 	setTimeout(function(){
+	// 	 	$('.aboutMeButton').removeClass('invisible');
+	// 	 }, 200);
+	// 	 console.log("Removing Invisible");
+	// 	 $('.aboutMeCard').addClass('visible');
+	// 	setTimeout(function(){
+	// 	 	$('.aboutMeButton').addClass('visible');
+	// 	 }, 200);
+	// 	 console.log("Adding Visible");
+	//    }
+	//    else{
+	//    };
+    // } else {
+	// 	$('.aboutMeCard').removeClass('fadeIn');
+	// 	setTimeout(function(){
+	// 	 	$('.aboutMeButton').removeClass('fadeIn');
+	// 	 }, 200);
+	// 	console.log("Removing FadeIn");
+	// 	$('.aboutMeCard').addClass('fadeOut');
+	// 	setTimeout(function(){
+	// 	 	$('.aboutMeButton').addClass('fadeOut');
+	// 	 }, 200);
+	// 	console.log("Adding fadeOut");
+    // };
 
 
 
@@ -441,3 +441,77 @@ function readMore(experience) {
 // 		scrollTop: position
 // 	}, 2000 );
 // });
+
+// Timeline
+(function ($) {
+	$(function () {
+  
+  
+	  $(window).on('scroll', function () {
+		fnOnScroll();
+	  });
+  
+	  $(window).on('resize', function () {
+		fnOnResize();
+	  });
+  
+  
+	  var agTimeline = $('.js-timeline'),
+		agTimelineLine = $('.js-timeline_line'),
+		agTimelineLineProgress = $('.js-timeline_line-progress'),
+		agTimelinePoint = $('.js-timeline-card_point-box'),
+		agTimelineItem = $('.js-timeline_item'),
+		agOuterHeight = $(window).outerHeight(),
+		agHeight = $(window).height(),
+		f = -1,
+		agFlag = false;
+  
+	  function fnOnScroll() {
+		agPosY = $(window).scrollTop();
+  
+		fnUpdateFrame();
+	  }
+  
+	  function fnOnResize() {
+		agPosY = $(window).scrollTop();
+		agHeight = $(window).height();
+  
+		fnUpdateFrame();
+	  }
+  
+	  function fnUpdateWindow() {
+		agFlag = false;
+  
+		agTimelineLine.css({
+		  top: agTimelineItem.first().find(agTimelinePoint).offset().top - agTimelineItem.first().offset().top,
+		  bottom: agTimeline.offset().top + agTimeline.outerHeight() - agTimelineItem.last().find(agTimelinePoint).offset().top
+		});
+  
+		f !== agPosY && (f = agPosY, agHeight, fnUpdateProgress());
+	  }
+  
+	  function fnUpdateProgress() {
+		var agTop = agTimelineItem.last().find(agTimelinePoint).offset().top;
+  
+		i = agTop + agPosY - $(window).scrollTop();
+		a = agTimelineLineProgress.offset().top + agPosY - $(window).scrollTop();
+		n = agPosY - a + agOuterHeight / 2;
+		i <= agPosY + agOuterHeight / 2 && (n = i - a);
+		agTimelineLineProgress.css({height: n + "px"});
+  
+		agTimelineItem.each(function () {
+		  var agTop = $(this).find(agTimelinePoint).offset().top;
+  
+		  (agTop + agPosY - $(window).scrollTop()) < agPosY + .5 * agOuterHeight ? $(this).addClass('js-ag-active') : $(this).removeClass('js-ag-active');
+		})
+	  }
+  
+	  function fnUpdateFrame() {
+		agFlag || requestAnimationFrame(fnUpdateWindow);
+		agFlag = true;
+	  }
+  
+  
+	});
+  })(jQuery);
+  

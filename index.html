@@ -17,7 +17,15 @@
       <!-- Required meta tags -->
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <!-- font -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Vollkorn:wght@400;500;600&display=swap" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Montserrat|Pridi" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+HK:wght@300&display=swap" rel="stylesheet"> 
+      <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Abel&family=Quicksand:wght@500&family=Raleway:wght@500&display=swap" rel="stylesheet">
 
       <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -25,9 +33,13 @@
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.1/css/font-awesome.min.css"> -->
     <link rel="stylesheet" type="text/css" href="styles.css">
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-    <title> </ edwin do /> </title>
+
+    <!-- <a href="https://www.flaticon.com/free-icons/technical" title="technical icons">Technical icons created by Freepik - Flaticon</a> -->
+    <link rel="icon" href="./icons/logo-light.png">
+    <title>edwin do.</title>
   </head>
   <body>
+
     <div class="container-fluid">
       <div id="topHeader" class="navbar navbar-toggleable-md navbar-inverse fixed-top bg-inverse justify-content-end">
         <img id="github" class="navbarIcon animated invisible" src="images/github2.png" alt="GitHub" data-toggle="tooltip" title="GitHub" onclick="window.open('https://github.com/edwin-do', '_blank');">
@@ -53,7 +65,7 @@
               <div class="aboutMeWrapper">
                 <div class="container">
                   <div class="section-header">
-                    <h2>about.</h2>
+                    <h2 class="heading">about.</h2>
                     <hr>
                   </div>
                   <div id="aboutMeCard" class="aboutMeCard animated">
@@ -95,7 +107,7 @@
                         </div>
                       </div>
                     </div>
-                    <a id="aboutMeButtonWrapper" class="scroll" href="#projectsCol">
+                    <a id="aboutMeButtonWrapper" class="scroll" href="downloads/edwin-do-resume.pdf">
                       <button id="aboutMeButton1" type="button" class="btn btn-outline-primary aboutMeButton animated" >download my resume!</button>
                     </a>
                   </div>
@@ -104,169 +116,276 @@
           </div>
           <div class="projectsWrapper">
             <!-- Timeline -->
-            <div class="row mt-5">
-                  <div class="container">
-                    <div class="section-header">
-                      <h2>experience.</h2>
-                      <hr>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="Yearly-timeline">
-                                <div class="timeline">
-                                    <div class="timeline-content experience" data-experience="freshbooks">
-                                        <div class="timeline-icon"><img class="expImage" src="images/freshbooks.jpg"></div>
-                                        <h6 class="font-weight-bold">Software Engineering Intern @ FreshBooks</h6>
-                                        <p class="description">
-                                            I worked on the Product Development team and had the opportunity to work on an upcoming feature release. 
-                                            My mentor (FreshBuddy) quickly helped me get onboarded and I started off familarizing myself with the services by tackling production bugs.
-                                            Once I felt more comfortable in the codebase, I became more involved with the ongoing feature release and participated in more design related conversations.                                      
-                                          <span class="dots">...</span>
-                                          <br><br>    
+  <div class="ag-timeline-block container">
+    <div class="section-header mb-5">
+      <h2 class="heading">experience.</h2>
+      <hr>
+    </div>
+  <section class="ag-section">
+    <div class="ag-format-container">
+      <div class="js-timeline ag-timeline">
+        <div class="js-timeline_line ag-timeline_line">
+          <div class="js-timeline_line-progress ag-timeline_line-progress"></div>
+        </div>
+        <div class="ag-timeline_list">
+          <!-- Start of Item -->
+          <div class="js-timeline_item ag-timeline_item">
+            <div class="ag-timeline-card_box">
+              <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+                <div class="ag-timeline-card_point"></div>
+              </div>
+              <div class="ag-timeline-card_meta-box">
+                <div class="ag-timeline-card_meta">it's a unicorn <img class="expImage" src="images/unicorn.png"></div>
+              </div>
+            </div>
+            <div class="ag-timeline-card_item">
+              <div class="ag-timeline-card_inner">
+                <div class="ag-timeline-card_img-box">  
+                  <h3 class="expTitle">
+                    <img src="images/freshbooks.jpg" class="ag-timeline-card_img" width="250" height="250" />
+                    <span class="ml-2">FreshBooks</span>  
+                    </h3>
+                </div>
+                <div class="ag-timeline-card_info experience" data-experience="freshbooks">
+                  <h4 class="font-weight-bold">Software Engineering Intern</h4>
+                  <p class="text-muted">May 2022 - Aug 2022</p>
+                  <br>
+                  <p class="description text-left">
+                    I worked on the Product Development team and had the opportunity to work on an upcoming feature release. 
+                    My mentor (FreshBuddy) quickly helped me get onboarded and I started off familarizing myself with the services by tackling production bugs.
+                    Once I felt more comfortable in the codebase, I became more involved with the ongoing feature release and participated in more design related conversations.                                      
+                  <span class="dots">...</span>
+                  <br><br>    
 
-                                          <span class="more" style="display: none;">
-                                            My main responsiblilities during this internship were to implement new REST API endpoints and improve the error handling in various microservices.
-                                            Through this, I was able to learn a lot about hexagonal architecture and how to write cleaner, easier to understand code through the feedback in my PRs and mentor. 
-                                            I was also able to help provide feedback for the PRs on my team and engage in meaningful conversations. 
-                                            All in all, I had a fantastic internship through my time at FreshBooks and I owe it all to my FreshBuddy and the team for being an absolute blast to be around. 
-                                            <br><br>
-                                          </span>
-                                          
-                                          
-                                          <a href="javascript:void(0)" class="stretched-link myBtn" onclick="readMore('freshbooks')">Read more</a>
-                                        </p>
-                                        <br>
-                                        <h6 class="title">May 2022 - Aug 2022</h6>
-                                      </div>
-                                </div>
-                                <div class="timeline">
-                                    <div class="timeline-content experience" data-experience="menlolab">
-                                        <div class="timeline-icon"><img class="expImage" src="images/menlolab.png"></div>    
-                                        <h6 class="font-weight-bold">Software Developer Intern @ MenloLab</h6>
-                                        <p class="description">
-                                            This was my first startup experience. We had a small but close development team, and communicated majority of our daily updates through standup. 
-                                            I was onboarded through a in-house CLI tool that was used to pull and spin up all the required Docker images. 
-                                            I started my term with a couple light tickets such as adding skeleton loaders, updating outdated packages and adding simple components in Vue.js.
-                                            Afterwards, I quickly moved on to other new features such as pulling and displaying git information for a repository page,
-                                            creating a file tree interface where users can navigate, add and delete files and folders, and implementing a tool bar used to zoom within the interface. 
-                                            
-                                          <span class="dots">...</span>
-                                          <br><br>
-
-                                          <span class="more" style="display: none;">
-                                            In the later half of my term, I was tasked to create a Desktop application that can be installed on Windows and Linux machines. 
-                                            I started out by researching the available options and compiled a table that compares the strengths and weaknesses between each option. 
-                                            The team selected a couple potential candidates, and I quickly created a mock-up for each to see its compatability and identify any early problems.
-                                            After presenting my findings to the team, we decided to move forward with Tauri and I started developing the application. 
-                                            This application needed to communicate with sockets (linux) or named pipes (windows) using interprocess communication to determine the state of certain visual components.
-                                            For example, if a connection is established, a status icon will be toggled green to reflect its state. 
-                                            During my testing with this application, I ran into issues arised from a race condition when refreshing the statuses of multiple networks.
-                                            I was able to solve this concurrency issue by using locks and some help from a senior developer. 
-                                            I definitely learned a lot during this internship and would love to give everyone at MenloLab a shoutout for helping me along the way. 
-                                            <br><br>
-                                          </span>
-                                          
-                                          <a href="javascript:void(0)" class="stretched-link myBtn" onclick="readMore('menlolab')">Read more</a>
-                                        </p>
-                                        <br>
-                                        <h6 class="title">May 2021 - Dec 2021</h6>
-                                      </div>
-                                </div>
-                                <div class="timeline">
-                                    <a href="" class="timeline-content">
-                                        <div class="timeline-icon"><img class="expImage" src="images/mars.jpg"></div>    
-                                        <h6 class="font-weight-bold">Season 17 MARS Apprentice @ MARS</h6>
-                                        <p class="description">
-                                            I worked on the Product Development team and had the opportunity to work on an upcoming feature release. 
-                                            My mentor (FreshBuddy) quickly helped me get onboarded and I started off familarizing myself with the services by tackling production bugs.
-                                            Once I felt more comfortable in the codebase, I became more involved with the ongoing feature release and participated in more design related conversations.
-                                            <br><br>
-                                            My main responsiblilities during this internship were to implement new REST API endpoints and improve the error handling in various microservices.
-                                            Through this, I was able to learn a lot about hexagonal architecture and how to write cleaner, easier to understand code through the feedback in my PRs and mentor. 
-                                            I was also able to help provide feedback for the PRs on my team and engage in meaningful conversations. 
-                                            All in all, I had a fantastic internship through my time at FreshBooks and I owe it all to my FreshBuddy and the team for being an absolute blast to be around.
-                                            
-                                        </p>
-                                        <br>
-                                        <h3 class="title">May 2021 - Nov 2021</h3>
-                                    </a>
-                                </div>
-                                <div class="timeline">
-                                    <a href="" class="timeline-content">
-                                        <div class="timeline-icon"><img class="expImage" src="images/rbc.png"></div>    
-                                        <h6 class="font-weight-bold">Season 17 MARS Apprentice @ MARS</h6>
-                                        <p class="description">
-                                            I worked on the Product Development team and had the opportunity to work on an upcoming feature release. 
-                                            My mentor (FreshBuddy) quickly helped me get onboarded and I started off familarizing myself with the services by tackling production bugs.
-                                            Once I felt more comfortable in the codebase, I became more involved with the ongoing feature release and participated in more design related conversations.
-                                            <br><br>
-                                            My main responsiblilities during this internship were to implement new REST API endpoints and improve the error handling in various microservices.
-                                            Through this, I was able to learn a lot about hexagonal architecture and how to write cleaner, easier to understand code through the feedback in my PRs and mentor. 
-                                            I was also able to help provide feedback for the PRs on my team and engage in meaningful conversations. 
-                                            All in all, I had a fantastic internship through my time at FreshBooks and I owe it all to my FreshBuddy and the team for being an absolute blast to be around.
-                                            
-                                        </p>
-                                        <br>
-                                        <h3 class="title">May 2021 - Nov 2021</h3>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                  <span class="more" style="display: none;">
+                    My main responsiblilities during this internship were to implement new REST API endpoints and improve the error handling in various microservices.
+                    Through this, I was able to learn a lot about hexagonal architecture and how to write cleaner, easier to understand code through the feedback in my PRs and mentor. 
+                    I was also able to help provide feedback for the PRs on my team and engage in meaningful conversations. 
+                    All in all, I had a fantastic internship through my time at FreshBooks and I owe it all to my FreshBuddy and the team for being an absolute blast to be around. 
+                    <br><br>
+                  </span>
+                  
+                  <a href="javascript:void(0)" class="stretched-link myBtn" onclick="readMore('freshbooks')">Read more</a>
+                </p>
                 </div>
               </div>
-            <!-- Projects -->
+              <div class="ag-timeline-card_arrow"></div>
+            </div>
+          </div>
+          <!-- End of Item -->
+
+          <div class="js-timeline_item ag-timeline_item">
+            <div class="ag-timeline-card_box">
+              <div class="ag-timeline-card_meta-box">
+                <!-- <a href="https://www.flaticon.com/free-icons/speed" title="speed icons">Speed icons created by Freepik - Flaticon</a> -->
+                <div class="ag-timeline-card_meta"><img class="expImage" src="images/racecar.png"> So fast, so furious</div>
+              </div>
+              <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+                <div class="ag-timeline-card_point"></div>
+              </div>
+            </div>
+            <div class="ag-timeline-card_item text-left">
+              <div class="ag-timeline-card_inner">
+                <div class="ag-timeline-card_img-box">  
+                  <h3 class="expTitle">
+                    <img src="images/menlolab.png" class="ag-timeline-card_img" width="250" height="250" /> 
+                    <span class="ml-2">MenloLab</span> 
+                    </h3>
+                </div>
+                <div class="ag-timeline-card_info experience" data-experience="menlolab">
+                  <h4 class="font-weight-bold">Software Developer Intern</h4>
+                  <p class="text-muted">May 2021 - Dec 2021</p>
+                  <br>
+                  <p class="description text-left">
+                    My first startup experience. We had a small but close development team, and communicated majority of our daily updates through standup. 
+                    I was onboarded through a in-house CLI tool that was used to pull and spin up all the required Docker images. 
+                    I started my term with a couple light tickets such as adding skeleton loaders, updating outdated packages and adding simple components in Vue.js.
+                    
+                  <span class="dots">...</span>
+                  <br><br>
+
+                  <span class="more" style="display: none;">
+                    Afterwards, I quickly moved on to other new features such as pulling and displaying git information for a repository page,
+                    creating a file tree interface where users can navigate, add and delete files and folders, and implementing a tool bar used to zoom within the interface. 
+
+                    <br><br>
+                    In the later half of my term, I was tasked to create a Desktop application that can be installed on Windows and Linux machines. 
+                    I started out by researching the available options and compiled a table that compares the strengths and weaknesses between each option. 
+                    The team selected a couple potential candidates, and I quickly created a mock-up for each to see its compatability and identify any early problems.
+                    After presenting my findings to the team, we decided to move forward with Tauri and I started developing the application. 
+                    This application needed to communicate with sockets (linux) or named pipes (windows) using interprocess communication to determine the state of certain visual components.
+                    For example, if a connection is established, a status icon will be toggled green to reflect its state. 
+                   <br><br>
+                    During my testing with this application, I ran into issues arised from a race condition when refreshing the statuses of multiple networks.
+                    I was able to solve this concurrency issue by using locks and some help from a senior developer. 
+                    I definitely learned a lot during this internship and would love to give everyone at MenloLab a shoutout for helping me along the way. 
+                    <br><br>
+                  </span>
+                  
+                  <a href="javascript:void(0)" class="stretched-link myBtn" onclick="readMore('menlolab')">Read more</a>
+                </p>
+                </div>
+              </div>
+              <div class="ag-timeline-card_arrow"></div>
+            </div>
+          </div>
+
+          <div class="js-timeline_item ag-timeline_item">
+            <div class="ag-timeline-card_box">
+              <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+                <div class="ag-timeline-card_point"></div>
+              </div>
+              <div class="ag-timeline-card_meta-box">
+                <!-- <a href="https://www.flaticon.com/free-icons/study" title="study icons">Study icons created by SBTS2018 - Flaticon</a> -->
+                <div class="ag-timeline-card_meta">Case Competition? <img class="expImage" src="images/casestudy.png"></div>
+              </div>
+            </div>
+            <div class="ag-timeline-card_item">
+              <div class="ag-timeline-card_inner">
+                <div class="ag-timeline-card_img-box">  
+                  <h3 class="expTitle">
+                    <img src="images/mars.jpg" class="ag-timeline-card_img" width="250" height="250" /> 
+                    <span class="ml-2">MARS Apprentice</span>
+                    </h3>
+                </div>
+                <div class="ag-timeline-card_info experience" data-experience="menlolab">
+                  <h4 class="font-weight-bold">Season 17 Apprentice - Winner</h4>
+                  <p class="text-muted">May 2021 - Nov 2021</p> 
+                  <br>
+                  <p class="description text-left">
+                    This was my first startup experience. We had a small but close development team, and communicated majority of our daily updates through standup. 
+                    I was onboarded through a in-house CLI tool that was used to pull and spin up all the required Docker images. 
+                    I started my term with a couple light tickets such as adding skeleton loaders, updating outdated packages and adding simple components in Vue.js.
+                    
+                  <span class="dots">...</span>
+                  <br><br>
+
+                  <span class="more" style="display: none;">
+                    Afterwards, I quickly moved on to other new features such as pulling and displaying git information for a repository page,
+                    creating a file tree interface where users can navigate, add and delete files and folders, and implementing a tool bar used to zoom within the interface. 
+
+                    <br><br>
+                    In the later half of my term, I was tasked to create a Desktop application that can be installed on Windows and Linux machines. 
+                    I started out by researching the available options and compiled a table that compares the strengths and weaknesses between each option. 
+                    The team selected a couple potential candidates, and I quickly created a mock-up for each to see its compatability and identify any early problems.
+                    After presenting my findings to the team, we decided to move forward with Tauri and I started developing the application. 
+                    This application needed to communicate with sockets (linux) or named pipes (windows) using interprocess communication to determine the state of certain visual components.
+                    For example, if a connection is established, a status icon will be toggled green to reflect its state. 
+                   <br><br>
+                    During my testing with this application, I ran into issues arised from a race condition when refreshing the statuses of multiple networks.
+                    I was able to solve this concurrency issue by using locks and some help from a senior developer. 
+                    I definitely learned a lot during this internship and would love to give everyone at MenloLab a shoutout for helping me along the way. 
+                    <br><br>
+                  </span>
+                  
+                  <a href="javascript:void(0)" class="stretched-link myBtn" onclick="readMore('menlolab')">Read more</a>
+                </p>
+                </div>
+              </div>
+              <div class="ag-timeline-card_arrow"></div>
+            </div>
+          </div>
+
+          <div class="js-timeline_item ag-timeline_item">
+            <div class="ag-timeline-card_box">
+              <div class="ag-timeline-card_meta-box">
+                <!-- <a href="https://www.flaticon.com/free-icons/portfolio" title="portfolio icons">Portfolio icons created by SBTS2018 - Flaticon</a> -->
+                <div class="ag-timeline-card_meta"><img class="expImage" src="images/briefcase.png"> Some Corporate Experience</div>
+              </div>
+              <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+                <div class="ag-timeline-card_point"></div>
+              </div>
+            </div>
+            <div class="ag-timeline-card_item text-left">
+              <div class="ag-timeline-card_inner">
+                <div class="ag-timeline-card_img-box">  
+                  <h3 class="expTitle">
+                    <img src="images/rbc.png" class="ag-timeline-card_img" width="250" height="250" /> 
+                    <span class="ml-2">RBC</span> 
+                    </h3>
+                </div>
+                <div class="ag-timeline-card_info experience" data-experience="menlolab">
+                  <h4 class="font-weight-bold">Technical Systems Analyst</h4>
+                  <p class="text-muted">Dec 2019 - Aug 2020</p>
+                  <br>
+                  <p class="description text-left">
+                    This is my first startup experience. We had a small but close development team, and communicated majority of our daily updates through standup. 
+                    I was onboarded through a in-house CLI tool that was used to pull and spin up all the required Docker images. 
+                    I started my term with a couple light tickets such as adding skeleton loaders, updating outdated packages and adding simple components in Vue.js.
+                    
+                  <span class="dots">...</span>
+                  <br><br>
+
+                  <span class="more" style="display: none;">
+                    Afterwards, I quickly moved on to other new features such as pulling and displaying git information for a repository page,
+                    creating a file tree interface where users can navigate, add and delete files and folders, and implementing a tool bar used to zoom within the interface. 
+
+                    <br><br>
+                    In the later half of my term, I was tasked to create a Desktop application that can be installed on Windows and Linux machines. 
+                    I started out by researching the available options and compiled a table that compares the strengths and weaknesses between each option. 
+                    The team selected a couple potential candidates, and I quickly created a mock-up for each to see its compatability and identify any early problems.
+                    After presenting my findings to the team, we decided to move forward with Tauri and I started developing the application. 
+                    This application needed to communicate with sockets (linux) or named pipes (windows) using interprocess communication to determine the state of certain visual components.
+                    For example, if a connection is established, a status icon will be toggled green to reflect its state. 
+                   <br><br>
+                    During my testing with this application, I ran into issues arised from a race condition when refreshing the statuses of multiple networks.
+                    I was able to solve this concurrency issue by using locks and some help from a senior developer. 
+                    I definitely learned a lot during this internship and would love to give everyone at MenloLab a shoutout for helping me along the way. 
+                    <br><br>
+                  </span>
+                  
+                  <a href="javascript:void(0)" class="stretched-link myBtn" onclick="readMore('menlolab')">Read more</a>
+                </p>
+                </div>
+              </div>
+              <div class="ag-timeline-card_arrow"></div>
+            </div>
+          </div>
+          <!-- Projects -->
             <div class="row">
               <div class="container">
                 <div class="section-header">
-                  <h2>side projects.</h2>
+                  <h2 class="heading">projects.</h2>
                   <hr>
                 </div>
                 <div class="card-group col-md-12">
                   <div class="card">
                     <img src="images/englism.png" class="card-img-top" alt="...">
                     <div class="card-body">
-                      <h5 class="card-title">englism</h5>
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    </div>
-                    <div class="card-footer">
-                      <small class="text-muted">Last updated 3 mins ago</small>
+                      <a href="https://github.com/edwin-do/englism"><h5 class="card-title">englism</h5></a>
+                      <p class="card-text">A dictionary and thesaurus web application with the Merriam-Webster API.</p>
                     </div>
                   </div>
                   <div class="card">
                     <img src="images/vcity.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">vCity</h5>
-                      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                    </div>
-                    <div class="card-footer">
-                      <small class="text-muted">Last updated 3 mins ago</small>
+                    <div class="card-body">        
+                      <a href="https://github.com/edwin-do/vCity"><h5 class="card-title">vCity</h5></a>
+                      <p class="card-text">An application that utilizes voice API to assist users in touring Hamilton while driving</p>
                     </div>
                   </div>
                   <div class="card">
                     <img src="images/minimo.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                      <h5 class="card-title">minimo</h5>
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                    </div>
-                    <div class="card-footer">
-                      <small class="text-muted">Last updated 3 mins ago</small>
+                      <h5 class="card-title">minimo (open source)</h5>
+                      <p class="card-text">An elegant, simplified new tab page replacement for Google Chrome. Added searching and opening custom shortcuts using your voice. </p>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
             <!-- FOOTER -->
-            <hr>
-            <div class="container">
+            <div class="container mt-5">
+              <div class="section-header">
+                <h2 class="heading">connect.</h2>
+                <hr>
+              </div>
               <div class="jumbotron">
-                <!-- insert wave icon here -->
-                <h3 class="display-6"><img src="images/wave.png" class="expImage" alt="..."> hello world.</h3>
+                <h3 class="display-6 mt-3 text-light">hello world.  <img src="images/wave.png" class="expImage"></h3>
                 <p class="lead">I'm always open to having chats about tech, food and travelling. 
                 <br>
                 Or anything you might want to chat about!</p>
                 <hr class="my-4">
-                <p>Connect with me with one of the options below:</p>
+                <p>Connect with me through one of the options below:</p>
                 <p class="lead">
                   <img id="github" class="navbarIcon animated" src="images/github.png" alt="GitHub" data-toggle="tooltip" title="GitHub" onclick="window.open('https://github.com/edwin-do', '_blank');">
                   <img id="linkedin" class="navbarIcon animated" src="images/linkedin.png" alt="LinkedIn" data-toggle="tooltip" title="LinkedIn" onclick="window.open('https://www.linkedin.com/in/edwin-do/', '_blank');">
