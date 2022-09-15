@@ -1,363 +1,412 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114952259-1"></script>
+    <script>
+     window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-114952259-1');
+    </script>
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- font -->
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Quicksand:wght@500&family=Raleway:wght@500&display=swap" rel="stylesheet">
-    
-    <!-- Styles -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/app.css">
-    <link rel="stylesheet" href="css/colour.css">
-    <link rel="stylesheet" href="css/sections.css">
-    <link rel="stylesheet" href="css/animation.css">
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <!-- font -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Vollkorn:wght@400;500;600&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Montserrat|Pridi" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+HK:wght@300&display=swap" rel="stylesheet"> 
+      <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Abel&family=Quicksand:wght@500&family=Raleway:wght@500&display=swap" rel="stylesheet">
 
-    <!-- icon -->
+      <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.1/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+    <!-- <a href="https://www.flaticon.com/free-icons/technical" title="technical icons">Technical icons created by Freepik - Flaticon</a> -->
     <link rel="icon" href="./icons/logo-light.png">
+    <title>edwin do.</title>
+  </head>
+  <body>
 
-    <title>Home - Edwin Do</title>
-</head>
-
-<body>
-    <!-- preloader -->
-    <div class="se-pre-con"></div>
-    <!-- nav-bar begins -->
-    <div class="container">
-        <nav id="nav-main" class="navbar navbar-dark navbar-expand- py-0 fixed-top">
-            <!-- <a href="#" class="navbar-brand collapse">edwin</a> -->
-            <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks" aria-label="Toggle navigation">
-                <img id="menu" src="./img/menu.png" alt="">
-            </button>
-        </nav>
-    </div>
-
-    <!-- The overlay --> 
-        <div id="myNav" class="overlay">
-            <!-- Overlay content -->
-            <div class="overlay-content">
-            <a onclick=closeNav() href="" class="nav-link">home</a>
-            <a onclick=closeNav() href="#about" class="nav-link">about</a>
-            <a onclick=closeNav() href="#exp" class="nav-link">experience</a>
-            <a onclick=closeNav() href="#skills" class="nav-link">skills</a>
-            <a onclick=closeNav() href="./download/edwin-do_resume.pdf" download class="nav-link">resume</a>
+    <div class="container-fluid">
+      <div id="topHeader" class="navbar navbar-toggleable-md navbar-inverse fixed-top bg-inverse justify-content-end">
+        <img id="github" class="navbarIcon animated invisible" src="images/github2.png" alt="GitHub" data-toggle="tooltip" title="GitHub" onclick="window.open('https://github.com/edwin-do', '_blank');">
+        <img id="linkedin" class="navbarIcon animated invisible" src="images/linkedin2.png" alt="LinkedIn" data-toggle="tooltip" title="LinkedIn" onclick="window.open('https://www.linkedin.com/in/edwin-do/', '_blank');">
+        <img id="email" class="navbarIcon animated invisible" src="images/email2.png" alt="Email" data-toggle="tooltip" title="Email" onclick="location.href='mailto:doe@mcmaster.ca';");>
+      </div>
+      <div class="row">
+        <div id="introCol" class="col-md-12">
+          <div class ="introWrapper centerIt">
+            <div id="introTitle" class="mainTitle invisible">edwin do.</div>
+            <div id="introSubtitle" class="subTitle invisible"> full stack software engineering student</div>
+            <div id="introLocation" class="subTitle invisible">toronto, ontario</div>
+            <div id="introArrowContainer" style="display: inline-block; transform: scale(2.5,1.25);">
+              <a id="introArrowButton" class="scroll invisible" href="#aboutMeCol">
+                <i id="introArrow" class="fas fa-angle-double-down" ></i>
+              </a>
             </div>
-    
+          </div>
         </div>
-    </div>
-    <!-- nav-bar ends -->
-    
-    <!-- animated intro begins-->
-    <section class="container-fluid">
-        <div id="intro" class="d-none d-lg-block mt-5">
-            <div id="text-intro" class="row align-items-center text-center jumbotron">
-                    <h1 id="i">i</h1>
-                    <h1 class="typewrite" data-period="1500" data-type='[" ","&#160learn.", "&#160design.","&#160develop.","&#146m edwin."]'>
-                        <span class="wrap"></span>
-                    </h1>
-            </div>
-            <h3 id="welcome">welcome to my website</h3>
-            <div class="divider-dark"></div>
-            <div class="container text-center">
-                <a href="https://www.linkedin.com/in/edwin-do/"><img class="connect" src="./img/linkedin.png" alt=""></a>
-                <a href="https://github.com/edwin-do"><img class="connect" src="./img/github.png" alt=""></a>
-                <a href="mailto:doe@mcmaster.ca"><img class="connect" src="./img/email.png" alt=""></a>
-            </div>
-        </div>
-
-        <div id="intro" class="d-none d-md-block d-lg-none mt-5" >
-            <div id="text-intro" class="row align-items-center text-center jumbotron">
-                <h1 id="i">i</h1>
-                <h1 class="typewrite" data-period="2000" data-type='[ "","&#160learn.", "&#160design.","&#160develop.","&#146m edwin."]'>
-                    <span class="wrap"></span>
-                </h1>
-            </div>
-            <h3 id="welcome"> welcome to my website</h3>
-            <div class="divider-dark"></div>
-            <div class="container text-center">
-                <a href="https://www.linkedin.com/in/edwin-do/"><img class="connect" src="./img/linkedin.png" alt=""></a>
-                <a href="https://github.com/edwin-do"><img class="connect" src="./img/github.png" alt=""></a>
-                <a href="mailto:doe@mcmaster.ca"><img class="connect" src="./img/email.png" alt=""></a>
-            </div>
-        </div>
-
-        <div id="intro" class="d-xs-block d-md-none mt-5">
-            <div id="text-intro" class="row align-items-center text-center jumbotron">
-                <h1 id="i">i</h1>
-                <h1 class="typewrite" data-period="2000" data-type='[ "","&#160learn.", "&#160design.","&#160develop.","&#146m edwin."]'>
-                    <span class="wrap"></span>
-                </h1>
-            </div>
-            <h3 id="welcome"> welcome to my website</h3>
-            <div class="divider-dark"></div>
-            <div class="container text-center">
-                <a href="https://www.linkedin.com/in/edwin-do/"><img class="connect" src="./img/linkedin.png" alt=""></a>
-                <a href="https://github.com/edwin-do"><img class="connect" src="./img/github.png" alt=""></a>
-                <a href="mailto:doe@mcmaster.ca"><img class="connect" src="./img/email.png" alt=""></a>
-            </div>
-        </div>
-    </section>
-    <!-- animated intro ends-->
-
-    <!-- content begins -->
-    <!-- ABOUT ME -->
-    <div id="about"></div> 
-    <section class="container-fluid px-0 section black">
-        <!-- row1 -->
-        <div class="container section-head">
-            <div id="top"></div>
-            <h1 id="heading">About Me.</h1>
-            <div id="trigger-about"></div>
-            <div class="row" id="reveal-about">
-                <div class="col-12 sect-sm blue" >
-                    <div class="d-none d-md-flex rounded">
-                        <img class="rounded-circle" id=profile src="./img/profile2.jpg" alt="">
-                    </div>
-                    <div class="col-xs-12 col-md-6 text">
-                        <h1>Biography</h1>
-                        <img class="rounded-circle d-xs-flex d-md-none" id="thumbnail" src="./img/profile2.jpg" alt="">
-                        <div class="divider"></div>
-                        <p>Hello! Welcome to my website! I'm Edwin, it's nice to e-meet you!
-                        </p>
-                        <p>
-                            I have always been drawn to tech and curious about how things are built. 
-                            Especially tech since we would also run into various computer problems with that PC everyone shared growing up. 
-                            Today, I continuously seek for new opportunities to learn and sharpen the tools I have to build new things.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <!-- row 2 -->
-            <div class="row">
+      </div>
+      <div class="row">
+          <div name="aboutMeCol" id="aboutMeCol" class="col-md-12">
+              <div class="aboutMeWrapper">
                 <div class="container">
-                    <div class="row" id="reveal-about">
-                        <div class="col-xs-12 col-md-6 sect-sm red">
-                            <div class="container text">
-                                <h1>Education</h1>
-                                <div class="divider"></div>
-                                <p>
-                                    I started my post secondary education studying life sciences at McMaster University located in Hamilton, ON.
-                                    In effort to become more involve with tech, I chose to switch from Life Sciences to Engineering after my first year of university. 
-                                </p>
-                                <p>
-                                    After switching programs, I noticed that my courses are more aligned with my interests and that this is something I wish to pursue as a career. 
-                                    Today, I am a third year Software Engineering & Management Student aspiring to be a future Software Engineer and Product Manager.
-                                </p>
-                            </div>
+                  <div class="section-header">
+                    <h2 class="heading">about.</h2>
+                    <hr>
+                  </div>
+                  <div id="aboutMeCard" class="aboutMeCard animated">
+                    <div class="row">
+                      <div class="col-md-5 my-auto">
+                        <img id="animatedPortrait" class="img-fluid rounded-circle" src="images/profile_pic.jpg" alt="Portrait">
+                      </div>
+                      <div class="col-md-7">
+                        <div class="aboutMeHeader">
+                          me.
                         </div>
-                        <div class="col-xs-12 col-md-6 sect-sm purple">
-                            <div class="container text">
-                                <h1>Interests</h1>
-                                <div class="divider"></div>
-                                <p>
-                                    As a tech enthusiast, I enjoy reading about new upcoming tech and watching the latest tech reviews.
-                                    I also enjoy reading the TLDR newsletter which I highly recommend. You can subscribe to it here: https://www.tldrnewsletter.com/ 
-                                </p>
-                                <p>
-                                    I believe very strongly about a good work-life balance. In my free time, I try to find activities away from my workspace such as cooking or going out for a nature walk.
-                                    Occasionally I would also watch some TV shows and some of my favourites include Friends, The IT Crowd and The Boys.    
-                                </p>
-                            </div>
+                        <div class="aboutMeContent">
+                          Hello! Welcome to my website! I'm <b>Edwin</b>, it's nice to e-meet you!
+                          <br><br>
+                          I have always been drawn to <b>tech</b> and curious about how things are built. 
+                          We had one shared PC growing up in my family. 
+                          When I was first introduced to emails and online messaging, it felt like <b>magic</b>. 
+                          It drew me in, making me question things and wanting to learn more.
+                          Today, as new technology is being developed and showcased at a much faster rate, I still find myself feeling excited and inspired. 
+                          <br><br>
+                          Throughout the years, I have worked with a wide variety of frameworks and tools which has helped me quickly learn and adapt to new technology.
+                          Outside of programming, I love escape rooms, <b>travelling</b>, and thinking that I'm a great photographer when I take pictures of the food I eat.
+                          <b>Keep scrolling</b> to learn more about my professional and personal experiences!
                         </div>
+                        <div class="aboutMeHeader">
+                          skills.
+                        </div>
+                        <!-- Python, Javascript, SQL, React, Vue, Django, Docker, Git, Node.js -->
+                        <div class="aboutMeFrameworks">
+                          <img class="navbarIcon contentIcon" src="images/python.png" alt="Python" data-toggle="tooltip" data-placement="bottom" title="Python" onclick="window.open('https://www.python.org/', '_blank');">
+                          <img class="navbarIcon contentIcon" src="images/javascript.png" alt="JavaScript" data-toggle="tooltip" data-placement="bottom" title="JavaScript" onclick="window.open('https://www.lua.org/', '_blank');">
+                          <img class="navbarIcon contentIcon" src="images/sql.png" alt="SQL" data-toggle="tooltip" data-placement="bottom" title="SQL" onclick="window.open('https://www.mysql.com/', '_blank');">
+                          <img class="navbarIcon contentIcon" src="images/react.png" alt="React" data-toggle="tooltip" data-placement="bottom" title="React" onclick="window.open('https://reactjs.org/', '_blank');">
+                          <img class="navbarIcon contentIcon" src="images/vue.png" alt="Vue" data-toggle="tooltip" data-placement="bottom" title="Vue" onclick="window.open('https://vuejs.org/', '_blank');">
+                          <img class="navbarIcon contentIcon" src="images/django.png" alt="Django" data-toggle="tooltip" data-placement="bottom" title="Django" onclick="window.open('https://www.djangoproject.com/', '_blank');">
+                          <img class="navbarIcon contentIcon" src="images/docker.png" alt="Docker" data-toggle="tooltip" data-placement="bottom" title="Docker" onclick="window.open('https://www.docker.com/', '_blank');">
+                          <img class="navbarIcon contentIcon" src="images/git.png" alt="Git" data-toggle="tooltip" data-placement="bottom" title="Git" onclick="window.open('https://git-scm.com/', '_blank');">
+                          <img class="navbarIcon contentIcon" src="images/node.png" alt="Node.js" data-toggle="tooltip" data-placement="bottom" title="Node.js" onclick="window.open('https://nodejs.org/en/', '_blank');">
+                        </div>
+                        </div>
+                      </div>
                     </div>
+                    <a id="aboutMeButtonWrapper" class="scroll" href="downloads/edwin-do-resume.pdf">
+                      <button id="aboutMeButton1" type="button" class="btn btn-outline-primary aboutMeButton animated" >download my resume!</button>
+                    </a>
+                  </div>
                 </div>
-            </div>
-        </div>
+              </div>
+          </div>
+          <div class="projectsWrapper">
+            <!-- Timeline -->
+  <div class="ag-timeline-block container">
+    <div class="section-header mb-5">
+      <h2 class="heading">experience.</h2>
+      <hr>
     </div>
-    </section>
-
-    <!-- Experience -->
-    <div id="exp"></div>
-    <section class="container-fluid px-0 section grey">
-        <!-- row1 -->
-        <div class="container section-head">
-            <h1 id="heading">Experience.</h1>
-            <div id="trigger-exp"></div>
-            <div class="row" id="reveal-exp">
-                <div class="col-xs-12 col-lg-12 sect-sm blue">
-                    <div class="container text">
-                        <h1>Undergraduate Teaching Assistant</h1>
-                        <div class="divider"></div>
-                        <p>
-                            Currently, I am an Undergraduate Teaching Assistant at McMaster University for the course CS1XC3. Further details will be included at a later date. 
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <!-- row 2 -->
-            <div class="row">
-                <div class="container">
-                    <div class="row" id="reveal-exp">
-                        <div class="col-xs-12 col-lg-7 sect-sm purple">
-                            <div class="container text">
-                                <h1>Software Developer Intern</h1>
-                                <div class="divider"></div>
-                                <p>
-                                    During this coop term, I proactively develop scripts to automate the process of integrating business data from various sources, 
-                                    using Selenium, Excel and Python, saving 30mins daily. Utilizing the ServiceNow API, I also implemented automated email reports 
-                                    to display weekly new incidents for different applications. 
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-lg-5 sect-sm pink" >
-                            <div class="container text">
-                                <h1>Technical Systems Analyst</h1>
-                                <div class="divider"></div>
-                                <p>
-                                    During this coop term, I tracked and provided weekly analysis on Senior Director’s resource allocation and SOW with external vendors using Excel and MIS. 
-                                    I also executed automation test scripts on the QA team using JavaScript, Protractor and Selenium and 
-                                    developed python scripts to help extract data from XML files in cash applications.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- row 3 -->
-            <div class="row">
-                <div class="container">
-                    <div class="row" id="reveal-exp">
-                        <div class="col-xs-12 col-lg-5 sect-sm red">
-                            <div class="container text">
-                                <h1>Web & Desktop Applications Assistant</h1>
-                                <div class="divider"></div>
-                                <p>
-                                    As part of my work-study throughout my fall semester, I worked at the registrar office of McMaster. 
-                                    I provided technical assistance and helped maintain the database collections. 
-                                    Wrote a python script that achieved a 90% efficiency increase when processing incoming students.
-                                 </p>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-lg-7 sect-sm blue">
-                            <div class="container text">
-                                <h1>Computer Science Project Developer</h1>
-                                <div class="divider"></div>
-                                <p>
-                                    In the Summer of 2019, I developed exciting projects for high school students enrolled in the computer science stream at LEAP Academy.
-                                    LEAP Academy is a program offered to high school students to help them expore and discover their interest in STEM.
-                                    Through my projects and tutorials, I managed to improve student engagement by 70% according to the term-end survey
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+  <section class="ag-section container">
+    <div class="ag-format-container">
+      <div class="js-timeline ag-timeline">
+        <div class="js-timeline_line ag-timeline_line">
+          <div class="js-timeline_line-progress ag-timeline_line-progress"></div>
         </div>
-    </section>
-
-    <!-- Skills -->
-    <div id="skills"></div>
-    <section class="container-fluid px-0 section light-grey">
-        <!-- row1 -->
-        <div class="container section-head">
-            <h1 id="heading">Skills.</h1>
-            <div id="trigger-skills"></div>
-            <div class="row" id="reveal-skills">
-                <div class="col-xs-12 col-md-5 sect-sm pink">
-                    <div class="container text">
-                        <h1>About my skills</h1>
-                        <div class="divider"></div>
-                        <p>
-                            I've been working with a large variety of libraries and tools. 
-                            Here is a comprehensive list of what I am using most often/recent but am not limited to:
-                        </p>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-md-7 sect-sm green" >
-                    <div class="container text">
-                        <h1>Experienced</h1>
-                        <div class="divider"></div>
-                        <p>Javascript, Python, React, Java, Node.js, MongoDB and Express.js</p>
-                    </div>
-                </div>
+        <div class="ag-timeline_list">
+          <!-- Start of Item -->
+          <div class="js-timeline_item ag-timeline_item">
+            <div class="ag-timeline-card_box">
+              <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+                <div class="ag-timeline-card_point"></div>
+              </div>
+              <div class="ag-timeline-card_meta-box">
+                <div class="ag-timeline-card_meta">it's a unicorn <img class="expImage" src="images/unicorn.png"></div>
+              </div>
             </div>
-            <!-- row 2 -->
+            <div class="ag-timeline-card_item">
+              <div class="ag-timeline-card_inner">
+                <div class="ag-timeline-card_img-box">  
+                  <h3 class="expTitle">
+                    <img src="images/freshbooks.jpg" class="ag-timeline-card_img" width="250" height="250" />
+                    <span class="ml-2">FreshBooks</span>  
+                    </h3>
+                </div>
+                <div class="ag-timeline-card_info experience" data-experience="freshbooks">
+                  <h4 class="font-weight-bold">Software Engineering Intern</h4>
+                  <p class="text-muted">May 2022 - Aug 2022</p>
+                  <br>
+                  <p class="description text-left">
+                    I worked on the Product Development team and had the opportunity to work on an upcoming feature release. 
+                    My mentor (FreshBuddy) quickly helped me                                      
+                  <span class="dots">...</span>
+                  
+
+                  <span class="more" style="display: none;">
+                    get onboarded and I started off familarizing myself with the services by tackling production bugs.
+                    Once I felt more comfortable in the codebase, I became more involved with the ongoing feature release and participated in more design related conversations.
+                    
+                    <br><br>    
+                    My main responsiblilities during this internship were to implement new REST API endpoints and improve the error handling in various microservices.
+                    Through this, I was able to learn a lot about hexagonal architecture and how to write cleaner, easier to understand code through the feedback in my PRs and mentor. 
+                    I was also able to help provide feedback for the PRs on my team and engage in meaningful conversations. 
+                    All in all, I had a fantastic internship through my time at FreshBooks and I owe it all to my FreshBuddy and the team for being an absolute blast to be around. 
+                    <br><br>
+                  </span>
+                  
+                  <a href="javascript:void(0)" class="stretched-link myBtn" onclick="readMore('freshbooks')">Read more</a>
+                </p>
+                </div>
+              </div>
+              <div class="ag-timeline-card_arrow"></div>
+            </div>
+          </div>
+          <!-- End of Item -->
+
+          <div class="js-timeline_item ag-timeline_item">
+            <div class="ag-timeline-card_box">
+              <div class="ag-timeline-card_meta-box">
+                <!-- <a href="https://www.flaticon.com/free-icons/speed" title="speed icons">Speed icons created by Freepik - Flaticon</a> -->
+                <div class="ag-timeline-card_meta"><img class="expImage" src="images/racecar.png"> So fast, so furious</div>
+              </div>
+              <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+                <div class="ag-timeline-card_point"></div>
+              </div>
+            </div>
+            <div class="ag-timeline-card_item text-left">
+              <div class="ag-timeline-card_inner">
+                <div class="ag-timeline-card_img-box">  
+                  <h3 class="expTitle">
+                    <img src="images/menlolab.png" class="ag-timeline-card_img" width="250" height="250" /> 
+                    <span class="ml-2">MenloLab</span> 
+                    </h3>
+                </div>
+                <div class="ag-timeline-card_info experience" data-experience="menlolab">
+                  <h4 class="font-weight-bold">Software Developer Intern</h4>
+                  <p class="text-muted">May 2021 - Dec 2021</p>
+                  <br>
+                  <p class="description text-left">
+                    My first startup experience. We had a small but close development team, and communicated majority of our daily updates through standup. 
+                    I started my term with a couple light tickets such as adding skeleton loaders, updating outdated packages and adding simple components in Vue.js
+                    
+                  <span class="dots">...</span>
+                  <br><br>
+
+                  <span class="more" style="display: none;">
+                    Afterwards, I quickly moved on to other new features such as pulling and displaying git information for a repository page,
+                    creating a file tree interface where users can navigate, add and delete files and folders, and implementing a tool bar used to zoom within the interface. 
+
+                    <br><br>
+                    In the later half of my term, I was tasked to create a Desktop application that can be installed on Windows and Linux machines. 
+                    I started out by researching the available options and compiled a table that compares the strengths and weaknesses between each option. 
+                    The team selected a couple potential candidates, and I quickly created a mock-up for each to see its compatability and identify any early problems.
+                    After presenting my findings to the team, we decided to move forward with Tauri and I started developing the application. 
+                    This application needed to communicate with sockets (linux) or named pipes (windows) using interprocess communication to determine the state of certain visual components.
+                    For example, if a connection is established, a status icon will be toggled green to reflect its state. 
+                   <br><br>
+                    During my testing with this application, I ran into issues arised from a race condition when refreshing the statuses of multiple networks.
+                    I was able to solve this concurrency issue by using locks and some help from a senior developer. 
+                    I definitely learned a lot during this internship and would love to give everyone at MenloLab a shoutout for helping me along the way. 
+                    <br><br>
+                  </span>
+                  
+                  <a href="javascript:void(0)" class="stretched-link myBtn" onclick="readMore('menlolab')">Read more</a>
+                </p>
+                </div>
+              </div>
+              <div class="ag-timeline-card_arrow"></div>
+            </div>
+          </div>
+
+          <div class="js-timeline_item ag-timeline_item">
+            <div class="ag-timeline-card_box">
+              <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+                <div class="ag-timeline-card_point"></div>
+              </div>
+              <div class="ag-timeline-card_meta-box">
+                <!-- <a href="https://www.flaticon.com/free-icons/study" title="study icons">Study icons created by SBTS2018 - Flaticon</a> -->
+                <div class="ag-timeline-card_meta">Case Competition? <img class="expImage" src="images/casestudy.png"></div>
+              </div>
+            </div>
+            <div class="ag-timeline-card_item">
+              <div class="ag-timeline-card_inner">
+                <div class="ag-timeline-card_img-box">  
+                  <h3 class="expTitle">
+                    <img src="images/mars.jpg" class="ag-timeline-card_img" width="250" height="250" /> 
+                    <span class="ml-2">MARS Apprentice</span>
+                    </h3>
+                </div>
+                <div class="ag-timeline-card_info experience" data-experience="mars">
+                  <h4 class="font-weight-bold">Season 17 Apprentice - Winner</h4>
+                  <p class="text-muted">May 2021 - Nov 2021</p> 
+                  <br>
+                  <p class="description text-left">
+                    MARS Apprenctice is an experiential learning case competition offered to business and management students at McMaster. 
+                    We worked closely with five different companies to solve five different problems 
+                    
+                  <span class="dots">...</span>
+
+                  <span class="more" style="display: none;">
+                    that each company was currently facing. 
+                    12 students are selected every season to form two teams of 6 that will compete throughout the season. The companies that 
+                    we had the opportunity of working with in Season 17 were Microsoft, Telus, Canadian Tire, Jan Kelly, and PepsiCo.
+
+                    <br><br>
+
+                    MARS Apprentice widened my perspective on how businesses work. Having spent so much of my time being on the engineering side, it was very refreshing to tackle
+                    problems from a new point of view. All other members on my team except for myself, came from a business background. During case introductions,the initial approach that I had in mind would be completely 
+                    different from theirs. After listening to their thoughts, I realized that they had considered other aspects that I had not thought of.
+
+                    <br><br>
+                    Through this experience, I learned to see a business problem through multiple different lens. I introduced software and tools that we can leverage to my team, to help our strategy to provide more value to my team.
+                    My team showed me how to think like a marketer, how to collect data to derive our insights in order to construct our strategy. By helping each other and receiving feedback from the judges and mentors, our team got better and better after each presentation. 
+                    In the end, we were able to become the winners of Season 17 MARS Apprentice!
+                   <br><br>
+                  </span>
+                  
+                  <a href="javascript:void(0)" class="stretched-link myBtn" onclick="readMore('mars')">Read more</a>
+                </p>
+                </div>
+              </div>
+              <div class="ag-timeline-card_arrow"></div>
+            </div>
+          </div>
+
+          <div class="js-timeline_item ag-timeline_item">
+            <div class="ag-timeline-card_box">
+              <div class="ag-timeline-card_meta-box">
+                <!-- <a href="https://www.flaticon.com/free-icons/portfolio" title="portfolio icons">Portfolio icons created by SBTS2018 - Flaticon</a> -->
+                <div class="ag-timeline-card_meta"><img class="expImage" src="images/briefcase.png"> Big Corporate</div>
+              </div>
+              <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+                <div class="ag-timeline-card_point"></div>
+              </div>
+            </div>
+            <div class="ag-timeline-card_item text-left">
+              <div class="ag-timeline-card_inner">
+                <div class="ag-timeline-card_img-box">  
+                  <h3 class="expTitle">
+                    <img src="images/rbc.png" class="ag-timeline-card_img" width="250" height="250" /> 
+                    <span class="ml-2">RBC</span> 
+                    </h3>
+                </div>
+                <div class="ag-timeline-card_info experience" data-experience="rbc">
+                  <h4 class="font-weight-bold">Technical Systems Analyst</h4>
+                  <p class="text-muted">Dec 2019 - Aug 2020</p>
+                  <br>
+                  <p class="description text-left">
+                    First internship. This was my first experience working at company outside of McMaster. Technical responsiblilities aside, I felt like 
+                    I had so many new things to navigate. Learning about company culture, working on teams with people with vastly different experiences and background, 
+                    and then the pandemic had hit 
+                    
+                  <span class="dots">...</span>
+
+
+                  <span class="more" style="display: none;">
+                    in the middle of my internship. I adjusted to working remotely and from home, and having virtual meetings. 
+                    This experience definitely helped shaped how I saw an organization and what my role was in it. 
+
+                    <br><br>
+                    RBC has many employees. Although every team is technically under RBC, almost every team is different in terms of culture and team synergy. 
+                    Different departments had different challenges so everyone's solution was different.
+                    During this term, I worked on multiple teams and learning about each team's aspect of work. Through this, I learned that to work effectively on any 
+                    team, I must first understand its dynamics and culture. I learned to identify the person that was most likely to have the answer to my question and 
+                    reach out to them. The lessons I learned here, I carried them with me to all of my future opportunities.
+
+                    <br><br>
+                  </span>
+                  
+                  <a href="javascript:void(0)" class="stretched-link myBtn" onclick="readMore('rbc')">Read more</a>
+                </p>
+                </div>
+              </div>
+              <div class="ag-timeline-card_arrow"></div>
+            </div>
+          </div>
+          <!-- Projects -->
             <div class="row">
-                <div class="container">
-                    <div class="row" id="reveal-skills">
-                        <div class="col-xs-12 col-md-7 sect-sm purple">
-                            <div class="container text">
-                                <h1>Knowledgeable</h1>
-                                <div class="divider"></div>
-                                <p>Dart, SpringBoot, SQL, DB2, C#, C++, Android Studio, Flutter</p>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-md-5 sect-sm grey">
-                            <div class="container text">
-                                <h1>Currently Learning</h1>
-                                <div class="divider"></div>
-                                <p>
-                                    Ruby On Rails, Docker, AWS, GraphQL
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+              <div class="container">
+                <div class="section-header">
+                  <h2 class="heading">projects.</h2>
+                  <hr>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Connect -->
-    <section class="container-fluid px-0 section black">
-        <!-- row1 -->
-        <div class="container section-head">
-            <div id="top"></div>
-            <h1 id="heading">Connect.</h1>
-            <div id="trigger-about"></div>
-            <div class="row" id="reveal-about">
-                <div class="col-12 sect-sm pink" >
-                    <div class="d-none d-md-flex rounded">
-                        <img class="rounded-circle" id="profile" src="./img/profile.jpg" alt="">
+                <div class="card-group col-md-12">
+                  <div class="card">
+                    <img src="images/englism.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <a href="https://github.com/edwin-do/englism"><h5 class="card-title">englism</h5></a>
+                      <p class="card-text">A dictionary and thesaurus web application with the Merriam-Webster API.</p>
                     </div>
-                    <div class="col-xs-12 col-md-6 text">
-                        <h1>Hello World</h1>
-                        <img class="rounded-circle d-xs-flex d-md-none" id="thumbnail" src="./img/profile.jpg" alt="">
-                        <div class="divider"></div>
-                        <div class="text-left"> 
-                            <p>
-                                I am always open to meeting someone new! Feel free to connect and message me! :) 
-                            </p>
-                        </div>
-                        <div class="container text-center">
-                            <a href="https://www.linkedin.com/in/edwin-do/"><img class="connect" src="./img/linkedin2.png" alt=""></a>
-                            <a href="https://github.com/edwin-do"><img class="connect" src="./img/github2.png" alt=""></a>
-                            <a href="mailto:doe@mcmaster.ca"><img class="connect" src="./img/email2.png" alt=""></a>
-                        </div>
+                  </div>
+                  <div class="card">
+                    <img src="images/vcity.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">        
+                      <a href="https://github.com/edwin-do/vCity"><h5 class="card-title">vCity</h5></a>
+                      <p class="card-text">An application that utilizes voice API to assist users in touring Hamilton while driving</p>
                     </div>
+                  </div>
+                  <div class="card">
+                    <img src="images/minimo.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">minimo (open source)</h5>
+                      <p class="card-text">An elegant, simplified new tab page replacement for Google Chrome. Added searching and opening custom shortcuts using your voice. </p>
+                    </div>
+                  </div>
                 </div>
+              </div>
             </div>
-        </div>
-    </div>
-    </section>
-
-    <!-- footer -->
-    <footer>
-        <section class="container-fluid px-0 black">
-            <div class="text-center">
+            <!-- FOOTER -->
+            <div class="container mt-5">
+              <div class="section-header">
+                <h2 class="heading">connect.</h2>
+                <hr>
+              </div>
+              <div class="jumbotron">
+                <h3 class="display-6 mt-3 text-light">hello world.  <img src="images/wave.png" class="expImage"></h3>
+                <p class="lead">I'm always open to having chats about tech, food and travelling. 
                 <br>
-                <p>Designed & Developed by Edwin Do | &copy 2020</p>
+                Or anything you might want to chat about!</p>
                 <br>
+                <h6>Countries/Cities visited (not including Canada):</h6>
+                <p> Dominican Republic, Iceland, Boston, Florida, Hong Kong, Vietnam, China </p>
+                <hr class="my-4">
+                <p>You can connect with me through one of the options below:</p>
+                <p class="lead">
+                  <img id="github" class="navbarIcon animated" src="images/github.png" alt="GitHub" data-toggle="tooltip" title="GitHub" onclick="window.open('https://github.com/edwin-do', '_blank');">
+                  <img id="linkedin" class="navbarIcon animated" src="images/linkedin.png" alt="LinkedIn" data-toggle="tooltip" title="LinkedIn" onclick="window.open('https://www.linkedin.com/in/edwin-do/', '_blank');">
+                  <img id="email" class="navbarIcon animated" src="images/email.png" alt="Email" data-toggle="tooltip" title="Email" onclick="location.href='mailto:doe@mcmaster.ca';");>
+                </p>
+              </div>
             </div>
-        </section>
-    </footer>
-
-    <!-- content ends -->
-
-    <!-- scripts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
-    <script type="text/javascript" src="js/animation.js"></script>
-    <script type="text/javascript" src="js/scroll.js"></script>
-    <script type="text/javascript" src="js/load.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-
-</body>
-
+            <div class="row">
+                <div id="Footer" class="col-md-10 mx-auto">
+                  <div id="FooterText">Designed & Edited by Edwin Do | Credits: Hunter Harding</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="http://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
 </html>
