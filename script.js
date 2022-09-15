@@ -1,6 +1,4 @@
 /*   ON   LOAD     */
-'use strict';
-
 $(document).ready(function(){
     $('[data-toggle="tooltip"]').tooltip(); 
 });
@@ -445,9 +443,7 @@ function readMore(experience) {
 // });
 
 // Timeline
-'use strict';
 (function ($) {
-	'use strict';
 	$(function () {
   
   
@@ -470,7 +466,6 @@ function readMore(experience) {
 		f = -1,
 		agFlag = false;
   
-	  'use strict';
 	  function fnOnScroll() {
 		agPosY = $(window).scrollTop();
   
@@ -484,7 +479,6 @@ function readMore(experience) {
 		fnUpdateFrame();
 	  }
   
-	  'use strict';
 	  function fnUpdateWindow() {
 		agFlag = false;
   
@@ -496,7 +490,6 @@ function readMore(experience) {
 		f !== agPosY && (f = agPosY, agHeight, fnUpdateProgress());
 	  }
   
-	  'use strict';
 	  function fnUpdateProgress() {
 		var agTop = agTimelineItem.last().find(agTimelinePoint).offset().top;
   
@@ -513,7 +506,6 @@ function readMore(experience) {
 		})
 	  }
   
-	  'use strict';
 	  function fnUpdateFrame() {
 		agFlag || requestAnimationFrame(fnUpdateWindow);
 		agFlag = true;
