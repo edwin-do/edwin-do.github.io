@@ -104,7 +104,7 @@ $(document).ready((function() {
 	/*introCol hide content*/
 	$(window).scroll(function(){
 		if (($(window).width()/$(window).height()) > 1.5469){
-	    if ($(this).scrollTop() < 25) {	
+	    if ($(this).scrollTop() < 30) {	
 	   $('#introTitle').removeClass('flipOutX');
 	   setTimeout(function(){
 	   	$('#introSubtitle').removeClass('flipOutX');
