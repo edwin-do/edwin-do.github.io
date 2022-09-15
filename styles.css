@@ -1,7 +1,5 @@
 /*TODO:    HIDE OVERFLOW Y,         */
 
-
-
 .visible{
     visibility: visible;
 }
@@ -741,7 +739,7 @@ body {
     margin: -77px 0 0;
     background-color: #f3f5f7;
   
-    opacity: 0;
+    /* opacity: 0; */
   
     -webkit-border-radius: 6px;
     -moz-border-radius: 6px;
