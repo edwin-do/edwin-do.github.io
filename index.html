@@ -1,15 +1,12 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- google analytics stuffs-->
-
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114952259-1"></script>
     <script>
      window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'UA-114952259-1');
     </script>
 
@@ -71,7 +68,7 @@
                   <div id="aboutMeCard" class="aboutMeCard animated">
                     <div class="row">
                       <div class="col-md-5 my-auto">
-                        <img id="animatedPortrait" class="img-fluid rounded-circle" src="images/profile.jpg" alt="Portrait">
+                        <img id="animatedPortrait" class="img-fluid rounded-circle" src="images/profile_pic.jpg" alt="Portrait">
                       </div>
                       <div class="col-md-7">
                         <div class="aboutMeHeader">
@@ -87,7 +84,8 @@
                           Today, as new technology is being developed and showcased at a much faster rate, I still find myself feeling excited and inspired. 
                           <br><br>
                           Throughout the years, I have worked with a wide variety of frameworks and tools which has helped me quickly learn and adapt to new technology.
-                          Outside of programming, I love escape rooms, travelling, and thinking that I'm a great photographer when I take pictures of the food I eat.
+                          Outside of programming, I love escape rooms, <b>travelling</b>, and thinking that I'm a great photographer when I take pictures of the food I eat.
+                          <b>Keep scrolling</b> to learn more about my professional and personal experiences!
                         </div>
                         <div class="aboutMeHeader">
                           skills.
@@ -121,7 +119,7 @@
       <h2 class="heading">experience.</h2>
       <hr>
     </div>
-  <section class="ag-section">
+  <section class="ag-section container">
     <div class="ag-format-container">
       <div class="js-timeline ag-timeline">
         <div class="js-timeline_line ag-timeline_line">
@@ -152,12 +150,15 @@
                   <br>
                   <p class="description text-left">
                     I worked on the Product Development team and had the opportunity to work on an upcoming feature release. 
-                    My mentor (FreshBuddy) quickly helped me get onboarded and I started off familarizing myself with the services by tackling production bugs.
-                    Once I felt more comfortable in the codebase, I became more involved with the ongoing feature release and participated in more design related conversations.                                      
+                    My mentor (FreshBuddy) quickly helped me                                      
                   <span class="dots">...</span>
-                  <br><br>    
+                  
 
                   <span class="more" style="display: none;">
+                    get onboarded and I started off familarizing myself with the services by tackling production bugs.
+                    Once I felt more comfortable in the codebase, I became more involved with the ongoing feature release and participated in more design related conversations.
+                    
+                    <br><br>    
                     My main responsiblilities during this internship were to implement new REST API endpoints and improve the error handling in various microservices.
                     Through this, I was able to learn a lot about hexagonal architecture and how to write cleaner, easier to understand code through the feedback in my PRs and mentor. 
                     I was also able to help provide feedback for the PRs on my team and engage in meaningful conversations. 
@@ -198,8 +199,7 @@
                   <br>
                   <p class="description text-left">
                     My first startup experience. We had a small but close development team, and communicated majority of our daily updates through standup. 
-                    I was onboarded through a in-house CLI tool that was used to pull and spin up all the required Docker images. 
-                    I started my term with a couple light tickets such as adding skeleton loaders, updating outdated packages and adding simple components in Vue.js.
+                    I started my term with a couple light tickets such as adding skeleton loaders, updating outdated packages and adding simple components in Vue.js
                     
                   <span class="dots">...</span>
                   <br><br>
@@ -248,37 +248,35 @@
                     <span class="ml-2">MARS Apprentice</span>
                     </h3>
                 </div>
-                <div class="ag-timeline-card_info experience" data-experience="menlolab">
+                <div class="ag-timeline-card_info experience" data-experience="mars">
                   <h4 class="font-weight-bold">Season 17 Apprentice - Winner</h4>
                   <p class="text-muted">May 2021 - Nov 2021</p> 
                   <br>
                   <p class="description text-left">
-                    This was my first startup experience. We had a small but close development team, and communicated majority of our daily updates through standup. 
-                    I was onboarded through a in-house CLI tool that was used to pull and spin up all the required Docker images. 
-                    I started my term with a couple light tickets such as adding skeleton loaders, updating outdated packages and adding simple components in Vue.js.
+                    MARS Apprenctice is an experiential learning case competition offered to business and management students at McMaster. 
+                    We worked closely with five different companies to solve five different problems 
                     
                   <span class="dots">...</span>
-                  <br><br>
 
                   <span class="more" style="display: none;">
-                    Afterwards, I quickly moved on to other new features such as pulling and displaying git information for a repository page,
-                    creating a file tree interface where users can navigate, add and delete files and folders, and implementing a tool bar used to zoom within the interface. 
+                    that each company was currently facing. 
+                    12 students are selected every season to form two teams of 6 that will compete throughout the season. The companies that 
+                    we had the opportunity of working with in Season 17 were Microsoft, Telus, Canadian Tire, Jan Kelly, and PepsiCo.
 
                     <br><br>
-                    In the later half of my term, I was tasked to create a Desktop application that can be installed on Windows and Linux machines. 
-                    I started out by researching the available options and compiled a table that compares the strengths and weaknesses between each option. 
-                    The team selected a couple potential candidates, and I quickly created a mock-up for each to see its compatability and identify any early problems.
-                    After presenting my findings to the team, we decided to move forward with Tauri and I started developing the application. 
-                    This application needed to communicate with sockets (linux) or named pipes (windows) using interprocess communication to determine the state of certain visual components.
-                    For example, if a connection is established, a status icon will be toggled green to reflect its state. 
-                   <br><br>
-                    During my testing with this application, I ran into issues arised from a race condition when refreshing the statuses of multiple networks.
-                    I was able to solve this concurrency issue by using locks and some help from a senior developer. 
-                    I definitely learned a lot during this internship and would love to give everyone at MenloLab a shoutout for helping me along the way. 
+
+                    MARS Apprentice widened my perspective on how businesses work. Having spent so much of my time being on the engineering side, it was very refreshing to tackle
+                    problems from a new point of view. All other members on my team except for myself, came from a business background. During case introductions,the initial approach that I had in mind would be completely 
+                    different from theirs. After listening to their thoughts, I realized that they had considered other aspects that I had not thought of.
+
                     <br><br>
+                    Through this experience, I learned to see a business problem through multiple different lens. I introduced software and tools that we can leverage to my team, to help our strategy to provide more value to my team.
+                    My team showed me how to think like a marketer, how to collect data to derive our insights in order to construct our strategy. By helping each other and receiving feedback from the judges and mentors, our team got better and better after each presentation. 
+                    In the end, we were able to become the winners of Season 17 MARS Apprentice!
+                   <br><br>
                   </span>
                   
-                  <a href="javascript:void(0)" class="stretched-link myBtn" onclick="readMore('menlolab')">Read more</a>
+                  <a href="javascript:void(0)" class="stretched-link myBtn" onclick="readMore('mars')">Read more</a>
                 </p>
                 </div>
               </div>
@@ -290,7 +288,7 @@
             <div class="ag-timeline-card_box">
               <div class="ag-timeline-card_meta-box">
                 <!-- <a href="https://www.flaticon.com/free-icons/portfolio" title="portfolio icons">Portfolio icons created by SBTS2018 - Flaticon</a> -->
-                <div class="ag-timeline-card_meta"><img class="expImage" src="images/briefcase.png"> Some Corporate Experience</div>
+                <div class="ag-timeline-card_meta"><img class="expImage" src="images/briefcase.png"> Big Corporate</div>
               </div>
               <div class="js-timeline-card_point-box ag-timeline-card_point-box">
                 <div class="ag-timeline-card_point"></div>
@@ -304,37 +302,33 @@
                     <span class="ml-2">RBC</span> 
                     </h3>
                 </div>
-                <div class="ag-timeline-card_info experience" data-experience="menlolab">
+                <div class="ag-timeline-card_info experience" data-experience="rbc">
                   <h4 class="font-weight-bold">Technical Systems Analyst</h4>
                   <p class="text-muted">Dec 2019 - Aug 2020</p>
                   <br>
                   <p class="description text-left">
-                    This is my first startup experience. We had a small but close development team, and communicated majority of our daily updates through standup. 
-                    I was onboarded through a in-house CLI tool that was used to pull and spin up all the required Docker images. 
-                    I started my term with a couple light tickets such as adding skeleton loaders, updating outdated packages and adding simple components in Vue.js.
+                    First internship. This was my first experience working at company outside of McMaster. Technical responsiblilities aside, I felt like 
+                    I had so many new things to navigate. Learning about company culture, working on teams with people with vastly different experiences and background, 
+                    and then the pandemic had hit 
                     
                   <span class="dots">...</span>
-                  <br><br>
+
 
                   <span class="more" style="display: none;">
-                    Afterwards, I quickly moved on to other new features such as pulling and displaying git information for a repository page,
-                    creating a file tree interface where users can navigate, add and delete files and folders, and implementing a tool bar used to zoom within the interface. 
+                    in the middle of my internship. I adjusted to working remotely and from home, and having virtual meetings. 
+                    This experience definitely helped shaped how I saw an organization and what my role was in it. 
 
                     <br><br>
-                    In the later half of my term, I was tasked to create a Desktop application that can be installed on Windows and Linux machines. 
-                    I started out by researching the available options and compiled a table that compares the strengths and weaknesses between each option. 
-                    The team selected a couple potential candidates, and I quickly created a mock-up for each to see its compatability and identify any early problems.
-                    After presenting my findings to the team, we decided to move forward with Tauri and I started developing the application. 
-                    This application needed to communicate with sockets (linux) or named pipes (windows) using interprocess communication to determine the state of certain visual components.
-                    For example, if a connection is established, a status icon will be toggled green to reflect its state. 
-                   <br><br>
-                    During my testing with this application, I ran into issues arised from a race condition when refreshing the statuses of multiple networks.
-                    I was able to solve this concurrency issue by using locks and some help from a senior developer. 
-                    I definitely learned a lot during this internship and would love to give everyone at MenloLab a shoutout for helping me along the way. 
+                    RBC has many employees. Although every team is technically under RBC, almost every team is different in terms of culture and team synergy. 
+                    Different departments had different challenges so everyone's solution was different.
+                    During this term, I worked on multiple teams and learning about each team's aspect of work. Through this, I learned that to work effectively on any 
+                    team, I must first understand its dynamics and culture. I learned to identify the person that was most likely to have the answer to my question and 
+                    reach out to them. The lessons I learned here, I carried them with me to all of my future opportunities.
+
                     <br><br>
                   </span>
                   
-                  <a href="javascript:void(0)" class="stretched-link myBtn" onclick="readMore('menlolab')">Read more</a>
+                  <a href="javascript:void(0)" class="stretched-link myBtn" onclick="readMore('rbc')">Read more</a>
                 </p>
                 </div>
               </div>
@@ -384,8 +378,11 @@
                 <p class="lead">I'm always open to having chats about tech, food and travelling. 
                 <br>
                 Or anything you might want to chat about!</p>
+                <br>
+                <h6>Countries/Cities visited (not including Canada):</h6>
+                <p> Dominican Republic, Iceland, Boston, Florida, Hong Kong, Vietnam, China </p>
                 <hr class="my-4">
-                <p>Connect with me through one of the options below:</p>
+                <p>You can connect with me through one of the options below:</p>
                 <p class="lead">
                   <img id="github" class="navbarIcon animated" src="images/github.png" alt="GitHub" data-toggle="tooltip" title="GitHub" onclick="window.open('https://github.com/edwin-do', '_blank');">
                   <img id="linkedin" class="navbarIcon animated" src="images/linkedin.png" alt="LinkedIn" data-toggle="tooltip" title="LinkedIn" onclick="window.open('https://www.linkedin.com/in/edwin-do/', '_blank');">

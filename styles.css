@@ -895,10 +895,10 @@ body {
       width: 96%;
     }
   
-    .ag-timeline-card_img {
+    /* .ag-timeline-card_img {
       height: auto;
       width: auto;
-    }
+    } */
   }
   
   @media only screen and (max-width: 639px) {
