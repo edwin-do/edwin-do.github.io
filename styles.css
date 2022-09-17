@@ -34,6 +34,10 @@ margin-bottom: auto;
     /* box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); */
  }
 
+ .fixed-bottom{
+    background: rgba(0, 0, 0, 0.453);
+ }
+
 .aboutMeWrapper{
     /* background-image: url("images/background65.jpg" ); */
     background-color: #e8eaeb;
@@ -909,6 +913,10 @@ body {
     }
     .ag-timeline-card_desc {
       font-size: 14px;
+    }
+
+    .heading{
+      font-size: 65px;
     }
   }
   

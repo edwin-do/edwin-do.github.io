@@ -242,9 +242,6 @@ $(document).ready((function() {
 
 
     /* SCROLL SHOW/HIDE FOR PROJECTS*/
-
-
-
      if ($(this).scrollTop() > 1500) {	
 	   $('#projectCard1').removeClass('fadeOut');
 	   setTimeout(function(){
@@ -296,28 +293,6 @@ $(document).ready((function() {
 		 $('#contactCard').addClass('visible');
 		};
        }, 450);
-
-
-       /* PLACE HOLDER FOR CONTACT ME
-       setTimeout(function(){
-       	$('#introArrowButton').addClass('flipInX');
-       }, 450);
-	   console.log("Adding flipInX");*/
-
-
-	   /*if($( ".aboutMeCard" ).hasClass( "invisible" )){
-		 $('.aboutMeCard').removeClass('invisible');
-		 console.log("Removing Invisible");
-		 $('.aboutMeCard').addClass('visible');
-		 console.log("Adding Visible");
-	   }
-	   else{
-	   };
-    } else {
-		$('.aboutMeCard').removeClass('fadeIn');
-		console.log("Removing FadeIn");
-		$('.aboutMeCard').addClass('fadeOut');
-		console.log("Adding fadeOut");*/
 	};
 
 	if ($(this).scrollTop() < 1490) {
@@ -363,39 +338,6 @@ $(document).ready((function() {
 
 }});
 
-// function showMore(){
-//     var $this = $(this); 
-//     var $content = $this.parent().prev("div.content");
-//     var linkText = $this.text().toUpperCase();    
-
-//     if(linkText === "SHOW MORE"){
-//         linkText = "Show less";
-//         $content.switchClass("hideContent", "showContent", 400);
-//     } else {
-//         linkText = "Show more";
-//         $content.switchClass("showContent", "hideContent", 400);
-//     };
-
-// }
-
-
-// $(".show-more a").on("click", function() {
-// 	console.log("here");
-//     var $this = $(this); 
-//     var $content = $this.parent().prev("div.content");
-//     var linkText = $this.text().toUpperCase();    
-
-//     if(linkText === "SHOW MORE"){
-//         linkText = "Show less";
-//         $content.switchClass("hideContent", "showContent", 400);
-//     } else {
-//         linkText = "Show more";
-//         $content.switchClass("showContent", "hideContent", 400);
-//     };
-
-//     $this.text(linkText);
-// });​
-
 function readMore(experience) {
 	let dots = document.querySelector(`.experience[data-experience="${experience}"] .dots`);
     let moreText = document.querySelector(`.experience[data-experience="${experience}"] .more`); 
@@ -414,33 +356,6 @@ function readMore(experience) {
 	  moreText.style.display = "inline";
 	}
   } 
-
-// $("#myBtn").on("click", function(e) {
-// 	e.preventDefault();
-//     var dots = document.getElementById("dots");
-// 	var moreText = document.getElementById("more");
-// 	var btnText = document.getElementById("myBtn");
-// 	console.log("here");
-// 	if (dots.style.display === "none") {
-// 	  dots.style.display = "inline";
-// 	  btnText.innerHTML = "Read more";
-// 	  moreText.style.display = "none";
-// 	} else {
-// 	  dots.style.display = "none";
-// 	  btnText.innerHTML = "Read less";
-// 	  moreText.style.display = "inline";
-// 	}
-// });​
-
-// $("a[href^='#']").click(function(e) {
-// 	e.preventDefault();
-	
-// 	var position = $($(this).attr("href")).offset().top;
-
-// 	$("body, html").animate({
-// 		scrollTop: position
-// 	}, 2000 );
-// });
 
 // Timeline
 (function ($) {
