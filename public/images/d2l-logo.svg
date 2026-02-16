@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="D2L logo">
+  <circle cx="200" cy="200" r="194" fill="#efefef" stroke="#cfcfcf" stroke-width="4" />
+  <text x="96" y="242" font-size="120" font-family="Georgia, 'Times New Roman', serif" font-weight="700" fill="#0a0a0a" letter-spacing="2">D2L</text>
+  <rect x="188" y="246" width="44" height="8" rx="2" fill="#39d739" />
+</svg>
